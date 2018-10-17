@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bootdo.book.dao.BookChapterDao">
+
+	<select id="get" resultType="com.bootdo.book.domain.BookChapterDO">
+		select `chapter_id`,`stu_book_id`,`chapter_name`,`heart` from and_book_chapter where chapter_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.bootdo.book.domain.BookChapterDO">
+		select `chapter_id`,`stu_book_id`,`chapter_name`,`heart` from and_book_chapter
+        <where>  
+		  		  <if test="chapterId != null and chapterId != ''"> and chapter_id = #{chapterId} </if>
+		  		  <if test="stuBookId != null and stuBookId != ''"> and stu_book_id = #{stuBookId} </if>
+		  		  <if test="chapterName != null and chapterName != ''"> and chapter_name = #{chapterName} </if>
+		  		  <if test="heart != null and heart != ''"> and heart = #{heart} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by chapter_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from and_book_chapter
+		 <where>  
+		  		  <if test="chapterId != null and chapterId != ''"> and chapter_id = #{chapterId} </if>
+		  		  <if test="stuBookId != null and stuBookId != ''"> and stu_book_id = #{stuBookId} </if>
+		  		  <if test="chapterName != null and chapterName != ''"> and chapter_name = #{chapterName} </if>
+		  		  <if test="heart != null and heart != ''"> and heart = #{heart} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.bootdo.book.domain.BookChapterDO">
+		insert into and_book_chapter
+		(
+			`chapter_id`, 
+			`stu_book_id`, 
+			`chapter_name`, 
+			`heart`
+		)
+		values
+		(
+			#{chapterId}, 
+			#{stuBookId}, 
+			#{chapterName}, 
+			#{heart}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.bootdo.book.domain.BookChapterDO">
+		update and_book_chapter 
+		<set>
+			<if test="stuBookId != null">`stu_book_id` = #{stuBookId}, </if>
+			<if test="chapterName != null">`chapter_name` = #{chapterName}, </if>
+			<if test="heart != null">`heart` = #{heart}</if>
+		</set>
+		where chapter_id = #{chapterId}
+	</update>
+	
+	<delete id="remove">
+		delete from and_book_chapter where chapter_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from and_book_chapter where chapter_id in 
+		<foreach item="chapterId" collection="array" open="(" separator="," close=")">
+			#{chapterId}
+		</foreach>
+	</delete>
+
+</mapper>
