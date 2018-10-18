@@ -1,9 +1,13 @@
 package com.bootdo.book.service.impl;
 
+import com.bootdo.book.domain.BookAndChapterDo;
 import com.bootdo.common.utils.KeyGenerator;
+import com.bootdo.system.domain.UserDO;
+import com.bootdo.system.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -21,6 +25,8 @@ import javax.servlet.http.HttpServletRequest;
 public class BookServiceImpl implements BookService {
 	@Autowired
 	private BookDao bookDao;
+	@Autowired
+	private UserService userService;
 	
 	@Override
 	public BookDO get(String stuBookId){
@@ -28,8 +34,24 @@ public class BookServiceImpl implements BookService {
 	}
 	
 	@Override
-	public List<BookDO> list(Map<String, Object> map){
-		return bookDao.list(map);
+	public List<BookAndChapterDo> list(Map<String, Object> map){
+		List<BookDO> list = bookDao.list(map);
+		List<BookAndChapterDo> bacd=new ArrayList<>();
+
+		for (BookDO bookDO : list) {
+			BookAndChapterDo bookAndChapterDo=new BookAndChapterDo();
+			String stuBookId = bookDO.getStuBookId();
+			bookAndChapterDo.setStuBookId(stuBookId);
+			Long userId = bookDO.getUserId();
+			bookAndChapterDo.setUserId(userId);
+			UserDO userDO = userService.get(userId);
+			String username = userDO.getUsername();
+			bookAndChapterDo.setUsername(username);
+			String bookName = bookDO.getBookName();
+			bookAndChapterDo.setBookName(bookName);
+			bacd.add(bookAndChapterDo);
+		}
+		return bacd;
 	}
 	
 	@Override

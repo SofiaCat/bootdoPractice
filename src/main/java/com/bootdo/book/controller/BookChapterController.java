@@ -1,8 +1,12 @@
 package com.bootdo.book.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.bootdo.book.domain.BookAndChapterDo;
+import com.bootdo.book.service.BookService;
+import com.bootdo.common.utils.JSONUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -20,6 +24,11 @@ import com.bootdo.book.service.BookChapterService;
 import com.bootdo.common.utils.PageUtils;
 import com.bootdo.common.utils.Query;
 import com.bootdo.common.utils.R;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 书和章节
@@ -34,7 +43,8 @@ import com.bootdo.common.utils.R;
 public class BookChapterController {
 	@Autowired
 	private BookChapterService bookChapterService;
-	
+	@Autowired
+	private BookService bookService;
 	@GetMapping()
 	//@RequiresPermissions("book:bookChapter:bookChapter")
 	String BookChapter(){
@@ -113,5 +123,22 @@ public class BookChapterController {
 		bookChapterService.batchRemove(chapterIds);
 		return R.ok();
 	}
-	
+
+	@RequestMapping("/selectBook")
+	@ResponseBody
+	public R  selectBook(){
+		Map<String,Object>map=new HashMap();
+		HttpServletRequest request= ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
+		Long userId = (Long) request.getSession().getAttribute("user_id");
+		map.put("userId",userId);
+		List<BookAndChapterDo> list = bookService.list(map);
+		/*Map<String,Object>result=new HashMap();
+		for (BookAndChapterDo bookAndChapterDo : list) {
+			String stuBookId = bookAndChapterDo.getStuBookId();
+			String bookName = bookAndChapterDo.getBookName();
+			result.put(stuBookId,bookName);
+		}*/
+		//String s = JSONUtils.beanToJson(result);
+		return R.succse(list);
+	}
 }

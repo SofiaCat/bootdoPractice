@@ -1,5 +1,14 @@
 $().ready(function() {
-	validateRule();
+    $('.summernote').summernote({
+        height : '220px',
+        lang : 'zh-CN',
+        callbacks: {
+            onImageUpload: function(files, editor, $editable) {
+                sendFile(files);
+            }
+        }
+    });
+    validateRule();
 });
 
 $.validator.setDefaults({
@@ -47,3 +56,24 @@ function validateRule() {
 		}
 	})
 }
+function selectBook() {
+	$("#bookName").empty();
+	$.ajax({
+		url:"/book/bookChapter/selectBook",
+		type:"get",
+        async: false,
+		success:function (data) {
+			if (data != null) {
+				if (data.code==0){
+					var dataInfo=data.data;
+                    var html="";
+                    for (var i = 0; i < dataInfo.length; i++) {
+						html=html+'<option value="' + dataInfo[i].stuBookId + '">' + dataInfo[i].bookName + '</option>'
+                    }
+					$("#bookName").append(html);
+				}
+			}
+        }
+
+	})
+  }

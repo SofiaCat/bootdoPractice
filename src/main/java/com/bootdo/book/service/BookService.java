@@ -1,5 +1,6 @@
 package com.bootdo.book.service;
 
+import com.bootdo.book.domain.BookAndChapterDo;
 import com.bootdo.book.domain.BookDO;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public interface BookService {
 	
 	BookDO get(String stuBookId);
 	
-	List<BookDO> list(Map<String, Object> map);
+	List<BookAndChapterDo> list(Map<String, Object> map);
 	
 	int count(Map<String, Object> map);
 	

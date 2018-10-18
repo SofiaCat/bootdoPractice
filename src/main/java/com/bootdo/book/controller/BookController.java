@@ -3,8 +3,11 @@ package com.bootdo.book.controller;
 import java.util.List;
 import java.util.Map;
 
+import com.bootdo.book.domain.BookAndChapterDo;
 import com.bootdo.common.controller.BaseController;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
@@ -33,6 +36,7 @@ import com.bootdo.common.utils.R;
 @Controller
 @RequestMapping("/book/book")
 public class BookController extends BaseController {
+	private  final Logger logger= LoggerFactory.getLogger(this.getClass());
 	@Autowired
 	private BookService bookService;
 	
@@ -48,9 +52,10 @@ public class BookController extends BaseController {
 	public PageUtils list(@RequestParam Map<String, Object> params){
 		//查询列表数据
         Query query = new Query(params);
-		List<BookDO> bookList = bookService.list(query);
+		List<BookAndChapterDo> list = bookService.list(query);
 		int total = bookService.count(query);
-		PageUtils pageUtils = new PageUtils(bookList, total);
+		PageUtils pageUtils = new PageUtils(list, total);
+		logger.info("pageUtils: "+pageUtils);
 		return pageUtils;
 	}
 	
@@ -87,8 +92,11 @@ public class BookController extends BaseController {
 	@RequestMapping("/update")
 	//@RequiresPermissions("book:book:edit")
 	public R update( BookDO book){
-		bookService.update(book);
-		return R.ok();
+		int reslut = bookService.update(book);
+		if (reslut > 0) {
+			return R.ok();
+		}
+		return R.error();
 	}
 	
 	/**

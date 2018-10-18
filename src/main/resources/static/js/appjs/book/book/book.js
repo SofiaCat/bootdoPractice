@@ -45,31 +45,41 @@ function load() {
 						// 返回false将会终止请求
 						columns : [
 								{
-									checkbox : true
+									checkbox : true,
+                                    //width : '20px',
+                                    align : 'center'
+								},
+														{
+                                title: '序号',
+                                switchable:false,
+                                width: '45px',
+                                formatter: function (value, row, index) {
+                                    var pageSize=$('#exampleTable').bootstrapTable('getOptions').pageSize;//通过表的#id 可以得到每页多少条
+                                    var pageNumber=$('#exampleTable').bootstrapTable('getOptions').pageNumber;//通过表的#id 可以得到当前第几页
+                                    return pageSize * (pageNumber - 1) + index + 1;
+                                    //return index+1;
+                                }
+                                },
+																{
+									field : 'username',
+									title : '用户'
 								},
 																{
-									field : 'stuBookId', 
-									title : 'ID' 
-								},
-											/*					{
-									field : 'userId', 
-									title : '用户id' 
-								},*/
-																{
-									field : 'bookName', 
-									title : '书名' 
+									field : 'bookName',
+									title : '书名',
 								},
 																{
 									title : '操作',
 									field : 'id',
+									width:'200px',
 									align : 'center',
 									formatter : function(value, row, index) {
-										var e = '<a class="btn btn-primary btn-sm '+s_edit_h+'" href="#" mce_href="#" title="编辑" onclick="edit(\''
+                                        var d = '<a class="btn btn-warning btn-sm '+s_remove_h+'" href="#" title="删除"  mce_href="#" onclick="remove(\''
+                                            + row.stuBookId
+                                            + '\')"><i class="fa fa-remove"></i></a> ';
+                                        var e = '<a class="btn btn-primary btn-sm '+s_edit_h+'" href="#" mce_href="#" title="编辑" onclick="edit(\''
 												+ row.stuBookId
 												+ '\')"><i class="fa fa-edit"></i></a> ';
-										var d = '<a class="btn btn-warning btn-sm '+s_remove_h+'" href="#" title="删除"  mce_href="#" onclick="remove(\''
-												+ row.stuBookId
-												+ '\')"><i class="fa fa-remove"></i></a> ';
 										var f = '<a class="btn btn-success btn-sm" href="#" title="备用"  mce_href="#" onclick="resetPwd(\''
 												+ row.stuBookId
 												+ '\')"><i class="fa fa-key"></i></a> ';

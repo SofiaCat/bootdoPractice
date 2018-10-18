@@ -3,32 +3,44 @@
 <meta charset="utf-8">
 <head th:include="include :: header"></head>
 <body class="gray-bg">
+<style type="text/css">
+
+</style>
+
 	<div class="wrapper wrapper-content ">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="ibox float-e-margins">
 					<div class="ibox-content">
-						<form class="form-horizontal m-t" id="signupForm">
+						<form class="form-horizontal m-t" id="signupForm"style="height: 500px">
 							<div class="form-group">	
-								<label class="col-sm-3 control-label">图书 id ：</label>
-								<div class="col-sm-8">
-									<input id="stuBookId" name="stuBookId" class="form-control" type="text">
+								<label class="col-sm-3 control-label">图书：</label>
+								<div class="col-sm-8" style="width: 320px">
+									<select id="bookName"class="form-control"onclick="selectBook()" >
+
+									</select>
+									<!--<input id="stuBookId" name="stuBookId" class="form-control" type="text">-->
 								</div>
 							</div>
 														<div class="form-group">	
 								<label class="col-sm-3 control-label">章节名：</label>
-								<div class="col-sm-8">
+								<div class="col-sm-8"style="width: 320px">
 									<input id="chapterName" name="chapterName" class="form-control" type="text">
 								</div>
 							</div>
-														<div class="form-group">	
+														<div class="form-group">
 								<label class="col-sm-3 control-label">读书心得：</label>
-								<div class="col-sm-8">
-									<input id="heart" name="heart" class="form-control" type="text">
+								<div class="col-sm-11" style="left: 30px;">
+										<div class="ibox-content no-padding">
+												<div id="content_sn" class="summernote"></div>
+										</div>
 								</div>
+								<!--<div class="col-sm-8">
+									<input id="heart" name="heart" class="form-control" type="text">
+								</div>-->
 							</div>
 																					<div class="form-group">
-								<div class="col-sm-8 col-sm-offset-3">
+								<div class="col-sm-8 col-sm-offset-3" style="margin-left: 45%">
 									<button type="submit" class="btn btn-primary">提交</button>
 								</div>
 							</div>
@@ -39,7 +51,9 @@
 	</div>
 	</div>
 	<div th:include="include::footer"></div>
-	<script type="text/javascript" src="/js/appjs/book/bookChapter/add.js">
+
+
+<script type="text/javascript" src="/js/appjs/book/bookChapter/add.js">
 	</script>
 </body>
 </html>
