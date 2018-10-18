@@ -18,7 +18,7 @@ public class BookDO implements Serializable {
 	//ID
 	private String stuBookId;
 	//用户id
-	private String userId;
+	private Long userId;
 	//书名
 	private String bookName;
 
@@ -34,18 +34,15 @@ public class BookDO implements Serializable {
 	public String getStuBookId() {
 		return stuBookId;
 	}
-	/**
-	 * 设置：用户id
-	 */
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	/**
-	 * 获取：用户id
-	 */
-	public String getUserId() {
+
+	public Long getUserId() {
 		return userId;
 	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
 	/**
 	 * 设置：书名
 	 */

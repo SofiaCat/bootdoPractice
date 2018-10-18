@@ -3,6 +3,7 @@ package com.bootdo.book.controller;
 import java.util.List;
 import java.util.Map;
 
+import com.bootdo.common.controller.BaseController;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -31,19 +32,19 @@ import com.bootdo.common.utils.R;
  
 @Controller
 @RequestMapping("/book/book")
-public class BookController {
+public class BookController extends BaseController {
 	@Autowired
 	private BookService bookService;
 	
 	@GetMapping()
-	@RequiresPermissions("book:book:book")
+	//@RequiresPermissions("book:book:book")
 	String Book(){
 	    return "book/book/book";
 	}
 	
 	@ResponseBody
 	@GetMapping("/list")
-	@RequiresPermissions("book:book:book")
+	//@RequiresPermissions("book:book:book")
 	public PageUtils list(@RequestParam Map<String, Object> params){
 		//查询列表数据
         Query query = new Query(params);
@@ -54,13 +55,13 @@ public class BookController {
 	}
 	
 	@GetMapping("/add")
-	@RequiresPermissions("book:book:add")
+	//@RequiresPermissions("book:book:add")
 	String add(){
 	    return "book/book/add";
 	}
 
 	@GetMapping("/edit/{stuBookId}")
-	@RequiresPermissions("book:book:edit")
+	//@RequiresPermissions("book:book:edit")
 	String edit(@PathVariable("stuBookId") String stuBookId,Model model){
 		BookDO book = bookService.get(stuBookId);
 		model.addAttribute("book", book);
@@ -72,7 +73,7 @@ public class BookController {
 	 */
 	@ResponseBody
 	@PostMapping("/save")
-	@RequiresPermissions("book:book:add")
+	//@RequiresPermissions("book:book:add")
 	public R save( BookDO book){
 		if(bookService.save(book)>0){
 			return R.ok();
@@ -84,7 +85,7 @@ public class BookController {
 	 */
 	@ResponseBody
 	@RequestMapping("/update")
-	@RequiresPermissions("book:book:edit")
+	//@RequiresPermissions("book:book:edit")
 	public R update( BookDO book){
 		bookService.update(book);
 		return R.ok();
@@ -95,7 +96,7 @@ public class BookController {
 	 */
 	@PostMapping( "/remove")
 	@ResponseBody
-	@RequiresPermissions("book:book:remove")
+	//@RequiresPermissions("book:book:remove")
 	public R remove( String stuBookId){
 		if(bookService.remove(stuBookId)>0){
 		return R.ok();
@@ -108,7 +109,7 @@ public class BookController {
 	 */
 	@PostMapping( "/batchRemove")
 	@ResponseBody
-	@RequiresPermissions("book:book:batchRemove")
+	//@RequiresPermissions("book:book:batchRemove")
 	public R remove(@RequestParam("ids[]") String[] stuBookIds){
 		bookService.batchRemove(stuBookIds);
 		return R.ok();

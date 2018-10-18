@@ -36,14 +36,14 @@ public class BookChapterController {
 	private BookChapterService bookChapterService;
 	
 	@GetMapping()
-	@RequiresPermissions("book:bookChapter:bookChapter")
+	//@RequiresPermissions("book:bookChapter:bookChapter")
 	String BookChapter(){
 	    return "book/bookChapter/bookChapter";
 	}
 	
 	@ResponseBody
 	@GetMapping("/list")
-	@RequiresPermissions("book:bookChapter:bookChapter")
+	//@RequiresPermissions("book:bookChapter:bookChapter")
 	public PageUtils list(@RequestParam Map<String, Object> params){
 		//查询列表数据
         Query query = new Query(params);
@@ -54,13 +54,13 @@ public class BookChapterController {
 	}
 	
 	@GetMapping("/add")
-	@RequiresPermissions("book:bookChapter:add")
+	//@RequiresPermissions("book:bookChapter:add")
 	String add(){
 	    return "book/bookChapter/add";
 	}
 
 	@GetMapping("/edit/{chapterId}")
-	@RequiresPermissions("book:bookChapter:edit")
+	//@RequiresPermissions("book:bookChapter:edit")
 	String edit(@PathVariable("chapterId") String chapterId,Model model){
 		BookChapterDO bookChapter = bookChapterService.get(chapterId);
 		model.addAttribute("bookChapter", bookChapter);
@@ -72,7 +72,7 @@ public class BookChapterController {
 	 */
 	@ResponseBody
 	@PostMapping("/save")
-	@RequiresPermissions("book:bookChapter:add")
+	//@RequiresPermissions("book:bookChapter:add")
 	public R save( BookChapterDO bookChapter){
 		if(bookChapterService.save(bookChapter)>0){
 			return R.ok();
@@ -84,7 +84,7 @@ public class BookChapterController {
 	 */
 	@ResponseBody
 	@RequestMapping("/update")
-	@RequiresPermissions("book:bookChapter:edit")
+	//@RequiresPermissions("book:bookChapter:edit")
 	public R update( BookChapterDO bookChapter){
 		bookChapterService.update(bookChapter);
 		return R.ok();
@@ -95,7 +95,7 @@ public class BookChapterController {
 	 */
 	@PostMapping( "/remove")
 	@ResponseBody
-	@RequiresPermissions("book:bookChapter:remove")
+	//@RequiresPermissions("book:bookChapter:remove")
 	public R remove( String chapterId){
 		if(bookChapterService.remove(chapterId)>0){
 		return R.ok();
@@ -108,7 +108,7 @@ public class BookChapterController {
 	 */
 	@PostMapping( "/batchRemove")
 	@ResponseBody
-	@RequiresPermissions("book:bookChapter:batchRemove")
+	//@RequiresPermissions("book:bookChapter:batchRemove")
 	public R remove(@RequestParam("ids[]") String[] chapterIds){
 		bookChapterService.batchRemove(chapterIds);
 		return R.ok();

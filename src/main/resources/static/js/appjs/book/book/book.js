@@ -51,10 +51,10 @@ function load() {
 									field : 'stuBookId', 
 									title : 'ID' 
 								},
-																{
+											/*					{
 									field : 'userId', 
 									title : '用户id' 
-								},
+								},*/
 																{
 									field : 'bookName', 
 									title : '书名' 

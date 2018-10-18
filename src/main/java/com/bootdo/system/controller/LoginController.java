@@ -9,7 +9,10 @@ import com.bootdo.common.utils.MD5Utils;
 import com.bootdo.common.utils.R;
 import com.bootdo.common.utils.ShiroUtils;
 import com.bootdo.system.domain.MenuDO;
+import com.bootdo.system.domain.UserDO;
 import com.bootdo.system.service.MenuService;
+import com.bootdo.system.service.UserService;
+import com.sun.net.httpserver.HttpsServer;
 import io.swagger.models.auth.In;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -23,8 +26,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class LoginController extends BaseController {
@@ -34,6 +42,8 @@ public class LoginController extends BaseController {
 	MenuService menuService;
 	@Autowired
 	FileService fileService;
+	@Autowired
+	private UserService userService;
 	@GetMapping({ "/", "" })
 	String welcome(Model model) {
 
@@ -74,6 +84,14 @@ public class LoginController extends BaseController {
 		UsernamePasswordToken token = new UsernamePasswordToken(username, password);
 		Subject subject = SecurityUtils.getSubject();
 		try {
+			Map<String,Object> map=new HashMap<>();
+			map.put("username",username);
+			List<UserDO> list = userService.list(map);
+			Long userId = list.get(0).getUserId();
+			HttpServletRequest request= ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
+			request.getSession().setAttribute("user_id",userId);
+			Long user_id = (Long) request.getSession().getAttribute("user_id");
+			logger.info("user_id:"+user_id);
 			subject.login(token);
 			return R.ok();
 		} catch (AuthenticationException e) {
