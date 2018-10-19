@@ -1,5 +1,6 @@
 package com.bootdo.book.service;
 
+import com.bootdo.book.domain.BookAndChapterDo;
 import com.bootdo.book.domain.BookChapterDO;
 
 import java.util.List;
@@ -27,4 +28,6 @@ public interface BookChapterService {
 	int remove(String chapterId);
 	
 	int batchRemove(String[] chapterIds);
+
+	List<BookAndChapterDo> listBooks(Map<String,Object> map);
 }

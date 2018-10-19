@@ -1,5 +1,6 @@
 package com.bootdo.book.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,9 +58,10 @@ public class BookChapterController {
 	public PageUtils list(@RequestParam Map<String, Object> params){
 		//查询列表数据
         Query query = new Query(params);
-		List<BookChapterDO> bookChapterList = bookChapterService.list(query);
+		//List<BookChapterDO> bookChapterList = bookChapterService.list(query);
+		List<BookAndChapterDo> bookAndChapterDos = bookChapterService.listBooks(query);
 		int total = bookChapterService.count(query);
-		PageUtils pageUtils = new PageUtils(bookChapterList, total);
+		PageUtils pageUtils = new PageUtils(bookAndChapterDos, total);
 		return pageUtils;
 	}
 	
@@ -83,7 +85,7 @@ public class BookChapterController {
 	@ResponseBody
 	@PostMapping("/save")
 	//@RequiresPermissions("book:bookChapter:add")
-	public R save( BookChapterDO bookChapter){
+	public R save( @RequestBody BookChapterDO bookChapter){
 		if(bookChapterService.save(bookChapter)>0){
 			return R.ok();
 		}
@@ -95,9 +97,12 @@ public class BookChapterController {
 	@ResponseBody
 	@RequestMapping("/update")
 	//@RequiresPermissions("book:bookChapter:edit")
-	public R update( BookChapterDO bookChapter){
-		bookChapterService.update(bookChapter);
-		return R.ok();
+	public R update(@RequestBody BookChapterDO bookChapter){
+		int update = bookChapterService.update(bookChapter);
+		if (update>0){
+			return R.ok();
+		}
+		return R.error();
 	}
 	
 	/**
@@ -132,13 +137,6 @@ public class BookChapterController {
 		Long userId = (Long) request.getSession().getAttribute("user_id");
 		map.put("userId",userId);
 		List<BookAndChapterDo> list = bookService.list(map);
-		/*Map<String,Object>result=new HashMap();
-		for (BookAndChapterDo bookAndChapterDo : list) {
-			String stuBookId = bookAndChapterDo.getStuBookId();
-			String bookName = bookAndChapterDo.getBookName();
-			result.put(stuBookId,bookName);
-		}*/
-		//String s = JSONUtils.beanToJson(result);
 		return R.succse(list);
 	}
 }

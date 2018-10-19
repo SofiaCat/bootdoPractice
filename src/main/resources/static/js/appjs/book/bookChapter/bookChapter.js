@@ -47,13 +47,20 @@ function load() {
 								{
 									checkbox : true
 								},
+                            {
+                                title: '序号',
+                                switchable: false,
+                                width: '70px',
+                                formatter: function (value, row, index) {
+                                    var pageSize = $('#exampleTable').bootstrapTable('getOptions').pageSize;//通过表的#id 可以得到每页多少条
+                                    var pageNumber = $('#exampleTable').bootstrapTable('getOptions').pageNumber;//通过表的#id 可以得到当前第几页
+                                    return pageSize * (pageNumber - 1) + index + 1;
+                                    //return index+1;
+                                }
+                            },
 																{
-									field : 'chapterId', 
-									title : 'ID' 
-								},
-																{
-									field : 'stuBookId', 
-									title : '图书 id ' 
+									field : 'bookName',
+									title : '图书名 '
 								},
 																{
 									field : 'chapterName', 

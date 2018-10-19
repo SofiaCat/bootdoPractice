@@ -9,6 +9,7 @@ $().ready(function() {
         }
     });
     validateRule();
+    selectBook();
 });
 
 $.validator.setDefaults({
@@ -17,11 +18,23 @@ $.validator.setDefaults({
 	}
 });
 function save() {
+    var stuBookId=document.getElementById("bookName").value;
+    var chapterName=document.getElementById("chapterName").value;
+    var heart = $("#content_sn").summernote('code');
+    $("#content").val(heart);
+    var BookChapterDO={
+        "stuBookId"	:stuBookId,
+        "chapterName":chapterName,
+        "heart":heart
+	}
 	$.ajax({
 		cache : true,
 		type : "POST",
+        contentType:"application/json; charset=utf-8",
 		url : "/book/bookChapter/save",
-		data : $('#signupForm').serialize(),// 你的formid
+		data :JSON.stringify(
+			BookChapterDO
+		),
 		async : false,
 		error : function(request) {
 			parent.layer.alert("Connection error");
@@ -67,11 +80,13 @@ function selectBook() {
 				if (data.code==0){
 					var dataInfo=data.data;
                     var html="";
+                    $("#getName").html('<select id="bookName"class="form-control"></select>')
                     for (var i = 0; i < dataInfo.length; i++) {
 						html=html+'<option value="' + dataInfo[i].stuBookId + '">' + dataInfo[i].bookName + '</option>'
                     }
 					$("#bookName").append(html);
 				}
+                $("#bookName").html(html);
 			}
         }
 

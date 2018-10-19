@@ -16276,3 +16276,14 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2018-10-18 20:52:57 -参数 : []
 2018-10-18 20:52:57 -耗时 : 0
 2018-10-18 20:52:57 -返回值 : login
+2018-10-18 21:03:08 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 2588]
+2018-10-18 21:26:47 -Validating all active sessions...
+2018-10-18 21:26:47 -Finished session validation.  [1] sessions were stopped.
+2018-10-18 21:26:47 -Validating all active sessions...
+2018-10-18 21:26:47 -Finished session validation.  No sessions were stopped.
+2018-10-18 21:26:47 -Validating all active sessions...
+2018-10-18 21:26:47 -Finished session validation.  No sessions were stopped.
+2018-10-18 21:33:05 -Validating all active sessions...
+2018-10-18 21:33:05 -Finished session validation.  No sessions were stopped.
+2018-10-18 21:33:08 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 2949]
+2018-10-18 22:03:08 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 3310]
