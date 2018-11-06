@@ -49,3 +49,14 @@ spring:
         max-active: 100
         # 连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1
+#ftp相关配置(FtpConfig)
+ftpCfg:
+  ftp_ip: 192.168.25.133
+  ftp_port: 22
+  ftp_user: itcast
+  ftp_pwd: itcast
+  ftp_base_path_video_upload: upload/
+# actustor
+management:
+  security:
+    enabled: false

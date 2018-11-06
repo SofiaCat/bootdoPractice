@@ -84,5 +84,11 @@ public class BookServiceImpl implements BookService {
 	public int batchRemove(String[] stuBookIds){
 		return bookDao.batchRemove(stuBookIds);
 	}
-	
+
+	@Override
+	public List<Map<String,Object>> allList() {
+		List<Map<String, Object>> maps = bookDao.allList();
+		return maps;
+	}
+
 }

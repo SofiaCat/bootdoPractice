@@ -28,4 +28,6 @@ public interface BookService {
 	int remove(String stuBookId);
 	
 	int batchRemove(String[] stuBookIds);
+	//获取全部信息
+	List<Map<String,Object>> allList();
 }

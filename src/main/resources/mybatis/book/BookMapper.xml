@@ -70,5 +70,10 @@
 			#{stuBookId}
 		</foreach>
 	</delete>
+	<select id="allList" resultType="java.util.Map">
+		SELECT su.`name`as '用户',sb.book_name as '书名'
+		FROM sys_user su,stu_book sb
+		WHERE su.user_id=sb.user_id
 
+	</select>
 </mapper>

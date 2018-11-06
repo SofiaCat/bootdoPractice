@@ -4,7 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 import com.bootdo.book.domain.BookAndChapterDo;
+import com.bootdo.common.annotation.Log;
 import com.bootdo.common.controller.BaseController;
+import com.bootdo.common.excel.ExportExcel;
+import com.bootdo.common.excel.HeaderData;
+import com.bootdo.common.excel.header.BookDataHeader;
+import com.bootdo.common.excel.header.StudentDataHeader;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +29,8 @@ import com.bootdo.book.service.BookService;
 import com.bootdo.common.utils.PageUtils;
 import com.bootdo.common.utils.Query;
 import com.bootdo.common.utils.R;
+
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * 用户和书
@@ -121,6 +128,15 @@ public class BookController extends BaseController {
 	public R remove(@RequestParam("ids[]") String[] stuBookIds){
 		bookService.batchRemove(stuBookIds);
 		return R.ok();
+	}
+	@RequestMapping("bookDataExport")
+	public void studentDataExport(BookAndChapterDo book, HttpServletResponse res) {
+		List<Map<String,Object>> dataMap =bookService.allList();
+
+		HeaderData heads = new BookDataHeader(book);
+
+		ExportExcel.exportExcelDownload(heads,dataMap,"图书数据统计",res);
+
 	}
 	
 }

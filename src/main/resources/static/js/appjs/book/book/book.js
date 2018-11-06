@@ -169,3 +169,8 @@ function batchRemove() {
 
 	});
 }
+
+function exportEl() {
+
+    window.location.href = prefix + "/bookDataExport" ;
+}

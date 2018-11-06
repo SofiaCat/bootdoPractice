@@ -1,0 +1,1611 @@
+2018-11-06 10:41:19 -Starting BootdoApplication on dell with PID 89548 (D:\GitHub\bootdo\target\classes started by john in D:\GitHub\bootdo)
+2018-11-06 10:41:19 -Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-11-06 10:41:19 -The following profiles are active: dev
+2018-11-06 10:41:19 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d8329: startup date [Tue Nov 06 10:41:19 CST 2018]; root of context hierarchy
+2018-11-06 10:41:23 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-06 10:41:25 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62402f1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:25 -Bean 'shiroConfig' of type [com.bootdo.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$54995dc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:26 -Bean 'userRealm' of type [com.bootdo.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:26 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/john/.m2/repository/net/sf/ehcache/ehcache/2.10.5/ehcache-2.10.5.jar!/ehcache-failsafe.xml
+2018-11-06 10:41:26 -Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:26 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:26 -Cache with name 'com.bootdo.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-11-06 10:41:27 -Added EhCache named [com.bootdo.system.shiro.UserRealm.authorizationCache]
+2018-11-06 10:41:27 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:27 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:27 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:27 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-06 10:41:29 -Tomcat initialized with port(s): 80 (http)
+2018-11-06 10:41:29 -Initializing ProtocolHandler ["http-nio-80"]
+2018-11-06 10:41:29 -Starting service [Tomcat]
+2018-11-06 10:41:29 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-11-06 10:41:29 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.8.0_121\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Dell\DW WLAN Card;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\WIDCOMM\Bluetooth Software\;c:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Java\jdk1.8.0_121\jre\bin;E:\sql\sql2\100\Tools\Binn\;E:\sql\100\Tools\Binn\;E:\sql\100\DTS\Binn\;E:\sql\sql2\100\Tools\Binn\VSShell\Common7\IDE\;E:\sql\sql2\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;E:\mysql\bin;C:\Program Files\VisualSVN Server\bin;D:\SSH Secure Shell;C:\Users\john\AppData\Local\GitHubDesktop\bin;.]
+2018-11-06 10:41:30 -Initializing Spring embedded WebApplicationContext
+2018-11-06 10:41:30 -Root WebApplicationContext: initialization completed in 10452 ms
+2018-11-06 10:41:33 -{dataSource-1} inited
+2018-11-06 10:41:35 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-06 10:41:35 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-06 10:41:35 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-06 10:41:35 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-06 10:41:35 -Filter xssFilter was not registered (disabled)
+2018-11-06 10:41:35 -Mapping filter: 'httpTraceFilter' to: [/*]
+2018-11-06 10:41:35 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-11-06 10:41:35 -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-11-06 10:41:35 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-11-06 10:41:35 -Servlet statViewServlet mapped to [/druid/*]
+2018-11-06 10:41:35 -Servlet dispatcherServlet mapped to [/]
+2018-11-06 10:41:38 -ProcessEngine default created
+2018-11-06 10:41:39 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d8329: startup date [Tue Nov 06 10:41:19 CST 2018]; root of context hierarchy
+2018-11-06 10:41:40 -Using default implementation for ThreadExecutor
+2018-11-06 10:41:40 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-11-06 10:41:40 -Quartz Scheduler v.2.2.1 created.
+2018-11-06 10:41:40 -RAMJobStore initialized.
+2018-11-06 10:41:40 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-11-06 10:41:40 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2018-11-06 10:41:40 -Quartz scheduler version: 2.2.1
+2018-11-06 10:41:40 -JobFactory set to: com.bootdo.common.quartz.factory.JobFactory@19f5daf
+2018-11-06 10:41:40 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-11-06 10:41:40 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/{id}],methods=[DELETE]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.remove(java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ModelController.list(int,int)
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.batchRemove(java.lang.String[])
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/add]}" onto public void com.bootdo.activiti.controller.ModelController.newModel(javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/edit/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.edit(javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/deploy/{id}],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ModelController.deploy(java.lang.String) throws java.lang.Exception
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/{modelId}/json],methods=[GET]}" onto public com.fasterxml.jackson.databind.node.ObjectNode com.bootdo.activiti.controller.ModelController.getEditorJson(java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/{modelId}/save],methods=[PUT]}" onto public void com.bootdo.activiti.controller.ModelController.saveModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/activiti/editor/stencilset],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.bootdo.activiti.controller.ModelController.getStencilset()
+2018-11-06 10:41:42 -Mapped "{[/activiti/model/export/{id}],methods=[GET]}" onto public void com.bootdo.activiti.controller.ModelController.exportToXml(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-11-06 10:41:42 -Mapped "{[/activiti/model],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ModelController.model()
+2018-11-06 10:41:42 -Mapped "{[/activiti/process/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.add()
+2018-11-06 10:41:42 -Mapped "{[/activiti/process/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.remove(java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/activiti/process/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.ProcessController.list(int,int)
+2018-11-06 10:41:42 -Mapped "{[/activiti/process/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.batchRemove(java.lang.String[])
+2018-11-06 10:41:42 -Mapped "{[/activiti/process],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.ProcessController.process()
+2018-11-06 10:41:42 -Mapped "{[/activiti/process/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.deploy(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+2018-11-06 10:41:42 -Mapped "{[/activiti/process/resource/read/{xml}/{id}]}" onto public void com.bootdo.activiti.controller.ProcessController.resourceRead(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-11-06 10:41:42 -Mapped "{[/activiti/process/convertToModel/{procDefId}]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.ProcessController.convertToModel(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws java.io.UnsupportedEncodingException,javax.xml.stream.XMLStreamException
+2018-11-06 10:41:42 -Mapped "{[/act/salary/form],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.add()
+2018-11-06 10:41:42 -Mapped "{[/act/salary/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/act/salary/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.remove(java.lang.String[])
+2018-11-06 10:41:42 -Mapped "{[/act/salary/update]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.update(com.bootdo.activiti.domain.SalaryDO)
+2018-11-06 10:41:42 -Mapped "{[/act/salary/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.SalaryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/act/salary],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.Salary()
+2018-11-06 10:41:42 -Mapped "{[/act/salary/form/{taskId}],methods=[GET]}" onto java.lang.String com.bootdo.activiti.controller.SalaryController.edit(java.lang.String,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/act/salary/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.activiti.controller.SalaryController.saveOrUpdate(com.bootdo.activiti.domain.SalaryDO)
+2018-11-06 10:41:42 -Mapped "{[/activiti/task/form/{procDefId}/{taskId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.form(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-11-06 10:41:42 -Mapped "{[/activiti/task/gotoList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.activiti.controller.TaskController.list(int,int)
+2018-11-06 10:41:42 -Mapped "{[/activiti/task/todo],methods=[GET]}" onto org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.todo()
+2018-11-06 10:41:42 -Mapped "{[/activiti/task/todoList],methods=[GET]}" onto java.util.List<com.bootdo.activiti.vo.TaskVO> com.bootdo.activiti.controller.TaskController.todoList()
+2018-11-06 10:41:42 -Mapped "{[/activiti/task/goto],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.activiti.controller.TaskController.gotoTask()
+2018-11-06 10:41:42 -Mapped "{[/activiti/task/form/{procDefId}],methods=[GET]}" onto public void com.bootdo.activiti.controller.TaskController.startForm(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-11-06 10:41:42 -Mapped "{[/activiti/task/trace/photo/{procDefId}/{execId}]}" onto public void com.bootdo.activiti.controller.TaskController.tracePhoto(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-11-06 10:41:42 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.blog()
+2018-11-06 10:41:42 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.add()
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.remove(java.lang.Long[])
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent/update]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.update(com.bootdo.blog.domain.ContentDO)
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.blog.controller.ContentController.save(com.bootdo.blog.domain.ContentDO)
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.bContent()
+2018-11-06 10:41:42 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.bootdo.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/add],methods=[GET]}" onto java.lang.String com.bootdo.book.controller.BookChapterController.add()
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookChapterController.remove(java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookChapterController.remove(java.lang.String[])
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/update]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookChapterController.update(com.bootdo.book.domain.BookChapterDO)
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.book.controller.BookChapterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookChapterController.save(com.bootdo.book.domain.BookChapterDO)
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/edit/{chapterId}],methods=[GET]}" onto java.lang.String com.bootdo.book.controller.BookChapterController.edit(java.lang.String,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter],methods=[GET]}" onto java.lang.String com.bootdo.book.controller.BookChapterController.BookChapter()
+2018-11-06 10:41:42 -Mapped "{[/book/bookChapter/selectBook]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookChapterController.selectBook()
+2018-11-06 10:41:42 -Mapped "{[/book/book/add],methods=[GET]}" onto java.lang.String com.bootdo.book.controller.BookController.add()
+2018-11-06 10:41:42 -Mapped "{[/book/book/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookController.remove(java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/book/book/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookController.remove(java.lang.String[])
+2018-11-06 10:41:42 -Mapped "{[/book/book/update]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookController.update(com.bootdo.book.domain.BookDO)
+2018-11-06 10:41:42 -Mapped "{[/book/book/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.book.controller.BookController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/book/book/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.book.controller.BookController.save(com.bootdo.book.domain.BookDO)
+2018-11-06 10:41:42 -Mapped "{[/book/book],methods=[GET]}" onto java.lang.String com.bootdo.book.controller.BookController.Book()
+2018-11-06 10:41:42 -Mapped "{[/book/book/edit/{stuBookId}],methods=[GET]}" onto java.lang.String com.bootdo.book.controller.BookController.edit(java.lang.String,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/book/book/bookDataExport]}" onto public void com.bootdo.book.controller.BookController.studentDataExport(com.bootdo.book.domain.BookAndChapterDo,javax.servlet.http.HttpServletResponse)
+2018-11-06 10:41:42 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.add()
+2018-11-06 10:41:42 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.remove(java.lang.Long[])
+2018-11-06 10:41:42 -Mapped "{[/common/dict/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.update(com.bootdo.common.domain.DictDO)
+2018-11-06 10:41:42 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.DictController.save(com.bootdo.common.domain.DictDO)
+2018-11-06 10:41:42 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.dict()
+2018-11-06 10:41:42 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listByType(java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.bootdo.common.domain.DictDO> com.bootdo.common.controller.DictController.listType()
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.add()
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.remove(java.lang.Long[])
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/update]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.update(com.bootdo.common.domain.FileDO)
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.save(com.bootdo.common.domain.FileDO)
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.FileController.info(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.bootdo.common.controller.GeneratorController.list()
+2018-11-06 10:41:42 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.bootdo.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.bootdo.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-11-06 10:41:42 -Mapped "{[/common/generator/batchCode]}" onto public void com.bootdo.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-11-06 10:41:42 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.GeneratorController.generator()
+2018-11-06 10:41:42 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.add()
+2018-11-06 10:41:42 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.remove(java.lang.Long[])
+2018-11-06 10:41:42 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.update(com.bootdo.common.domain.TaskDO)
+2018-11-06 10:41:42 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.save(com.bootdo.common.domain.TaskDO)
+2018-11-06 10:41:42 -Mapped "{[/common/job/info/{id}]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.info(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.JobController.taskScheduleJob()
+2018-11-06 10:41:42 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.remove(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.bootdo.common.controller.LogController.log()
+2018-11-06 10:41:42 -Mapped "{[/common/log/list],methods=[GET]}" onto com.bootdo.common.domain.PageDO<com.bootdo.common.domain.LogDO> com.bootdo.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-11-06 10:41:42 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.bootdo.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-06 10:41:42 -Mapped "{[/error]}" onto public com.bootdo.common.utils.R com.bootdo.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.add()
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/update]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.update(com.bootdo.oa.domain.NotifyDO)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.oa.controller.NotifyController.save(com.bootdo.oa.domain.NotifyDO)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.message()
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.oaNotify()
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.bootdo.oa.controller.NotifyController.selefNotify()
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.remove(java.lang.Long[])
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/update]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.update(com.bootdo.system.domain.DeptDO)
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.list()
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.DeptController.save(com.bootdo.system.domain.DeptDO)
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.DeptController.tree()
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.dept()
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.DeptController.treeView()
+2018-11-06 10:41:42 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.main()
+2018-11-06 10:41:42 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.login()
+2018-11-06 10:41:42 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.logout()
+2018-11-06 10:41:42 -Mapped "{[/login],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-11-06 10:41:42 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.remove(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.update(com.bootdo.system.domain.MenuDO)
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.MenuController.save(com.bootdo.system.domain.MenuDO)
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree(java.lang.Long)
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.bootdo.common.domain.Tree<com.bootdo.system.domain.MenuDO> com.bootdo.system.controller.MenuController.tree()
+2018-11-06 10:41:42 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-11-06 10:41:43 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-11-06 10:41:43 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.add()
+2018-11-06 10:41:43 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.update(com.bootdo.system.domain.RoleDO)
+2018-11-06 10:41:43 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.bootdo.system.domain.RoleDO> com.bootdo.system.controller.RoleController.list()
+2018-11-06 10:41:43 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(java.lang.Long)
+2018-11-06 10:41:43 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.save(com.bootdo.system.domain.RoleDO)
+2018-11-06 10:41:43 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-11-06 10:41:43 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:43 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.RoleController.role()
+2018-11-06 10:41:43 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.bootdo.system.domain.UserOnline> com.bootdo.system.controller.SessionController.list()
+2018-11-06 10:41:43 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.bootdo.common.utils.R com.bootdo.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-11-06 10:41:43 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.bootdo.system.controller.SessionController.sessionList()
+2018-11-06 10:41:43 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.bootdo.system.controller.SessionController.online()
+2018-11-06 10:41:43 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.bootdo.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.add(org.springframework.ui.Model)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.remove(java.lang.Long)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.update(com.bootdo.system.domain.UserDO)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.bootdo.common.utils.PageUtils com.bootdo.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.save(com.bootdo.system.domain.UserDO)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-11-06 10:41:43 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.bootdo.common.domain.Tree<com.bootdo.system.domain.DeptDO> com.bootdo.system.controller.UserController.tree()
+2018-11-06 10:41:43 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-11-06 10:41:43 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.user(org.springframework.ui.Model)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.personal(org.springframework.ui.Model)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.treeView()
+2018-11-06 10:41:43 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.resetPwd(com.bootdo.system.vo.UserVO)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.bootdo.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.adminResetPwd(com.bootdo.system.vo.UserVO)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-11-06 10:41:43 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.bootdo.common.utils.R com.bootdo.system.controller.UserController.updatePeronal(com.bootdo.system.domain.UserDO)
+2018-11-06 10:41:43 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-11-06 10:41:43 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-11-06 10:41:43 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-11-06 10:41:43 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-11-06 10:41:43 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-11-06 10:41:43 -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-11-06 10:41:43 -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-11-06 10:41:43 -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-06 10:41:43 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-11-06 10:41:44 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-11-06 10:41:44 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-11-06 10:41:44 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-06 10:41:45 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d8329: startup date [Tue Nov 06 10:41:19 CST 2018]; root of context hierarchy
+2018-11-06 10:41:45 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-06 10:41:45 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-06 10:41:45 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-06 10:41:45 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-11-06 10:41:45 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-11-06 10:41:47 -Registering beans for JMX exposure on startup
+2018-11-06 10:41:47 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-06 10:41:47 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-11-06 10:41:47 -Starting beans in phase 2147483647
+2018-11-06 10:41:47 -Context refreshed
+2018-11-06 10:41:47 -Found 1 custom documentation plugin(s)
+2018-11-06 10:41:47 -Scanning for api listing references
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_1
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_1
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_1
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_1
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_2
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_3
+2018-11-06 10:41:48 -Generating unique operation named: saveUsingPOST_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingGET_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingHEAD_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPUT_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPATCH_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingDELETE_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingOPTIONS_1
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingTRACE_1
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_2
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_2
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_2
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_4
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_5
+2018-11-06 10:41:48 -Generating unique operation named: saveUsingPOST_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingGET_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingHEAD_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPUT_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPATCH_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingDELETE_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingOPTIONS_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingTRACE_2
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_3
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_3
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_3
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_6
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_7
+2018-11-06 10:41:48 -Generating unique operation named: saveUsingPOST_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingGET_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingHEAD_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPUT_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPATCH_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingDELETE_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingOPTIONS_3
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingTRACE_3
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_4
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_4
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_4
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_8
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_9
+2018-11-06 10:41:48 -Generating unique operation named: saveUsingPOST_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingGET_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingHEAD_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPUT_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPATCH_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingDELETE_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingOPTIONS_4
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingTRACE_4
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_5
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_5
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_5
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_10
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_11
+2018-11-06 10:41:48 -Generating unique operation named: saveUsingPOST_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingGET_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingHEAD_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPUT_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPATCH_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingDELETE_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingOPTIONS_5
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingTRACE_5
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_6
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_6
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_6
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_6
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_7
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingGET_1
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingHEAD_1
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingPOST_1
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingPUT_1
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingPATCH_1
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingDELETE_1
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingOPTIONS_1
+2018-11-06 10:41:48 -Generating unique operation named: infoUsingTRACE_1
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_7
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_12
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_13
+2018-11-06 10:41:48 -Generating unique operation named: saveUsingPOST_6
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_7
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_8
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_14
+2018-11-06 10:41:48 -Generating unique operation named: welcomeUsingGET_1
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_7
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_8
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_9
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_15
+2018-11-06 10:41:48 -Generating unique operation named: saveUsingPOST_7
+2018-11-06 10:41:48 -Generating unique operation named: treeUsingGET_1
+2018-11-06 10:41:48 -Generating unique operation named: treeUsingGET_2
+2018-11-06 10:41:48 -Generating unique operation named: updateUsingPOST_8
+2018-11-06 10:41:48 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_9
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_10
+2018-11-06 10:41:48 -Generating unique operation named: addUsingGET_8
+2018-11-06 10:41:48 -Generating unique operation named: editUsingGET_10
+2018-11-06 10:41:48 -Generating unique operation named: listUsingGET_11
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_16
+2018-11-06 10:41:48 -Generating unique operation named: removeUsingPOST_17
+2018-11-06 10:41:49 -Generating unique operation named: saveUsingPOST_8
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingGET_6
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingHEAD_6
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPOST_9
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPUT_6
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPATCH_6
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingDELETE_6
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingOPTIONS_6
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingTRACE_6
+2018-11-06 10:41:49 -Generating unique operation named: handleUsingGET_1
+2018-11-06 10:41:49 -Generating unique operation named: addUsingGET_9
+2018-11-06 10:41:49 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-11-06 10:41:49 -Generating unique operation named: deployUsingPOST_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingGET_12
+2018-11-06 10:41:49 -Generating unique operation named: removeUsingPOST_18
+2018-11-06 10:41:49 -Generating unique operation named: addUsingGET_10
+2018-11-06 10:41:49 -Generating unique operation named: batchRemoveUsingPOST_3
+2018-11-06 10:41:49 -Generating unique operation named: editUsingGET_11
+2018-11-06 10:41:49 -Generating unique operation named: listUsingGET_13
+2018-11-06 10:41:49 -Generating unique operation named: saveUsingPOST_9
+2018-11-06 10:41:49 -Generating unique operation named: saveUsingPOST_10
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPOST_10
+2018-11-06 10:41:49 -Generating unique operation named: addUsingGET_11
+2018-11-06 10:41:49 -Generating unique operation named: editUsingGET_12
+2018-11-06 10:41:49 -Generating unique operation named: listUsingGET_14
+2018-11-06 10:41:49 -Generating unique operation named: removeUsingPOST_19
+2018-11-06 10:41:49 -Generating unique operation named: removeUsingPOST_20
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingGET_7
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingHEAD_7
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPOST_11
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPUT_7
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPATCH_7
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingDELETE_7
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingOPTIONS_7
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingTRACE_7
+2018-11-06 10:41:49 -Generating unique operation named: listUsingGET_15
+2018-11-06 10:41:49 -Generating unique operation named: listUsingHEAD_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingPOST_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingPUT_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingPATCH_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingDELETE_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingOPTIONS_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingTRACE_1
+2018-11-06 10:41:49 -Generating unique operation named: listUsingGET_16
+2018-11-06 10:41:49 -Generating unique operation named: addUsingGET_12
+2018-11-06 10:41:49 -Generating unique operation named: batchRemoveUsingPOST_4
+2018-11-06 10:41:49 -Generating unique operation named: editUsingGET_13
+2018-11-06 10:41:49 -Generating unique operation named: listUsingGET_17
+2018-11-06 10:41:49 -Generating unique operation named: removeUsingPOST_21
+2018-11-06 10:41:49 -Generating unique operation named: saveUsingPOST_11
+2018-11-06 10:41:49 -Generating unique operation named: treeUsingGET_3
+2018-11-06 10:41:49 -Generating unique operation named: treeViewUsingGET_1
+2018-11-06 10:41:49 -Generating unique operation named: updateUsingPOST_12
+2018-11-06 10:41:49 -Starting Quartz Scheduler now
+2018-11-06 10:41:49 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-11-06 10:41:49 -Starting...
+2018-11-06 10:41:49 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-11-06 10:41:49 -Started.
+2018-11-06 10:41:49 -Starting ProtocolHandler ["http-nio-80"]
+2018-11-06 10:41:49 -Using a shared selector for servlet write/read
+2018-11-06 10:41:49 -Tomcat started on port(s): 80 (http) with context path ''
+2018-11-06 10:41:49 -Started BootdoApplication in 32.427 seconds (JVM running for 35.426)
+2018-11-06 10:41:49 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-11-06 10:41:49 -==> Parameters: 
+2018-11-06 10:41:49 -<==      Total: 1
+2018-11-06 10:41:50 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-06 10:41:50 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-06 10:41:50 -FrameworkServlet 'dispatcherServlet': initialization completed in 421 ms
+2018-11-06 10:41:51 -Starting without optional epoll library
+2018-11-06 10:41:51 -Starting without optional kqueue library
+2018-11-06 10:42:09 -Enabling session validation scheduler...
+2018-11-06 10:42:09 -请求地址 : http://localhost/
+2018-11-06 10:42:09 -HTTP METHOD : GET
+2018-11-06 10:42:09 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2018-11-06 10:42:09 -参数 : [{}]
+2018-11-06 10:42:09 -耗时 : 5
+2018-11-06 10:42:09 -返回值 : redirect:/login
+2018-11-06 10:42:09 -请求地址 : http://localhost/login
+2018-11-06 10:42:09 -HTTP METHOD : GET
+2018-11-06 10:42:09 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-11-06 10:42:09 -参数 : []
+2018-11-06 10:42:09 -耗时 : 1
+2018-11-06 10:42:09 -返回值 : login
+2018-11-06 10:42:11 -请求地址 : http://localhost/login;JSESSIONID=87f3aa81-f70e-476c-96df-6139d2b45be9
+2018-11-06 10:42:11 -HTTP METHOD : GET
+2018-11-06 10:42:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-11-06 10:42:11 -参数 : []
+2018-11-06 10:42:11 -耗时 : 1
+2018-11-06 10:42:11 -返回值 : login
+2018-11-06 10:42:44 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2018-11-06 10:48:00 -请求地址 : http://localhost/login
+2018-11-06 10:48:00 -HTTP METHOD : POST
+2018-11-06 10:48:00 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-11-06 10:48:00 -参数 : [admin, 111111]
+2018-11-06 10:48:00 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-11-06 10:48:00 -==> Parameters: admin(String)
+2018-11-06 10:48:00 -<==      Total: 1
+2018-11-06 10:48:00 -user_id:1
+2018-11-06 10:48:00 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-11-06 10:48:00 -==> Parameters: admin(String)
+2018-11-06 10:48:00 -<==      Total: 1
+2018-11-06 10:48:00 -耗时 : 89
+2018-11-06 10:48:00 -返回值 : {msg=操作成功, code=0}
+2018-11-06 10:48:01 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2018-11-06 10:48:01 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:48:01 -==> Parameters: 1(Long), admin(String), 登录(String), 89(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-11-06 10:48:00.997(Timestamp)
+2018-11-06 10:48:01 -请求地址 : http://localhost/index
+2018-11-06 10:48:01 -HTTP METHOD : GET
+2018-11-06 10:48:01 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-11-06 10:48:01 -参数 : [{}]
+2018-11-06 10:48:01 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-11-06 10:48:01 -==> Parameters: 1(Long)
+2018-11-06 10:48:01 -<==    Updates: 1
+2018-11-06 10:48:01 -<==      Total: 31
+2018-11-06 10:48:01 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-11-06 10:48:01 -==> Parameters: 141(Long)
+2018-11-06 10:48:01 -<==      Total: 0
+2018-11-06 10:48:01 -耗时 : 360
+2018-11-06 10:48:01 -返回值 : index_v1
+2018-11-06 10:48:01 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:48:01 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 360(Integer), com.bootdo.system.controller.LoginController.index()(String), {"menus":[{"attributes":{"icon":"fa fa-bars","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-book","url":"/common/dict"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"78","parentId":"1","text":"数据字典"},{"attributes":{"icon":"fa fa-folder-open","url":"/common/sysFile"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","text":"基础管理"},{"attributes":{"icon":"fa fa-desktop"},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/user/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"6","parentId":"3","text":"用户管理"},{"attributes":{"icon":"fa fa-paw","url":"sys/role"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"3","text":"角色管理"},{"attributes":{"icon":"fa fa-th-list","url":"sys/menu/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"2","parentId":"3","text":"系统菜单"},{"attributes":{"icon":"fa fa-users","url":"/system/sysDept"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"73","parentId":"3","text":"部门管理"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","text":"系统管理"},{"attributes":{"icon":"fa fa-gear","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-code","url":"common/generator"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","text":"代码生成"},{"attributes":{"icon":"fa fa-hourglass-1","url":"common/job"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","text":"计划任务"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","text":"系统工具"},{"attributes":{"icon":"fa fa-video-camera","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/online"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","text":"在线用户"},{"attributes":{"icon":"fa fa-warning","url":"common/log"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"27","parentId":"91","text":"系统日志"},{"attributes":{"icon":"fa fa-caret-square-o-right","url":"/druid/index.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","text":"运行监控"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","text":"系统监控"},{"attributes":{"icon":"fa fa-laptop","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-bar-chart-o","url":"/oa/notify/overall"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"110","parentId":"84","text":"总体维度"},{"attributes":{"icon":"fa fa-envelope-square","url":"oa/notify/selfNotify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","text":"我的通知"},{"attributes":{"icon":"fa fa-pencil-square","url":"oa/notify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"85","parentId":"84","text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","text":"办公管理"},{"attributes":{"icon":"fa fa-rss","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-edit","url":"/blog/bContent/add"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","text":"发布文章"},{"attributes":{"icon":"fa fa-file-image-o","url":"blog/bContent"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"50","parentId":"49","text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","text":"博客管理"},{"attributes":{"icon":"fa fa-print","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-sort-amount-asc","url":"activiti/model"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"94","parentId":"93","text":"模型管理"},{"attributes":{"icon":"fa fa-flag","url":"activiti/process"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"96","parentId":"93","text":"流程管理"},{"attributes":{"icon":"","url":"activiti/task/todo"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","text":"待办任务"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","text":"工作流程"},{"attributes":{"icon":"fa fa-bar-chart","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-area-chart","url":"/chart/graph_echarts.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","text":"图表管理"},{"attributes":{"icon":"fa fa-thumbs-up","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-pencil","url":"book/bookChapter"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"109","parentId":"104","text":"章节及心得"},{"attributes":{"icon":"fa fa-folder-open","url":"/book/book"},"checked":false,"children":[],"hasChildren":(String), 127.0.0.1(String), 2018-11-06 10:48:01.549(Timestamp)
+2018-11-06 10:48:01 -<==    Updates: 1
+2018-11-06 10:48:01 -请求地址 : http://localhost/main
+2018-11-06 10:48:01 -HTTP METHOD : GET
+2018-11-06 10:48:01 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:48:01 -参数 : []
+2018-11-06 10:48:01 -耗时 : 1
+2018-11-06 10:48:01 -返回值 : main
+2018-11-06 10:48:02 -请求地址 : http://localhost/oa/notify/message
+2018-11-06 10:48:02 -HTTP METHOD : GET
+2018-11-06 10:48:02 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-11-06 10:48:02 -参数 : []
+2018-11-06 10:48:02 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:48:02 -==> Parameters: 1(Long), admin(String), error(String), null, http://localhost/oa/notify/message(String), java.lang.NullPointerException(String), null, 2018-11-06 10:48:02.304(Timestamp)
+2018-11-06 10:48:02 -请求地址 : http://localhost/main
+2018-11-06 10:48:02 -HTTP METHOD : GET
+2018-11-06 10:48:02 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:48:02 -参数 : []
+2018-11-06 10:48:02 -耗时 : 1
+2018-11-06 10:48:02 -返回值 : main
+2018-11-06 10:48:02 -null
+java.lang.NullPointerException: null
+	at com.bootdo.oa.service.impl.NotifyServiceImpl.selfList(NotifyServiceImpl.java:124)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$FastClassBySpringCGLIB$$ed38790f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$EnhancerBySpringCGLIB$$5049e6c5.selfList(<generated>)
+	at com.bootdo.oa.controller.NotifyController.message(NotifyController.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.bootdo.common.aspect.WebLogAspect.doAround(WebLogAspect.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bootdo.oa.controller.NotifyController$$EnhancerBySpringCGLIB$$691602e6.message(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-11-06 10:48:02 -<==    Updates: 1
+2018-11-06 10:48:17 -请求地址 : http://localhost/book/book
+2018-11-06 10:48:17 -HTTP METHOD : GET
+2018-11-06 10:48:17 -CLASS_METHOD : com.bootdo.book.controller.BookController.Book
+2018-11-06 10:48:17 -参数 : []
+2018-11-06 10:48:17 -耗时 : 0
+2018-11-06 10:48:17 -返回值 : book/book/book
+2018-11-06 10:48:17 -请求地址 : http://localhost/book/book/list
+2018-11-06 10:48:17 -HTTP METHOD : GET
+2018-11-06 10:48:17 -CLASS_METHOD : com.bootdo.book.controller.BookController.list
+2018-11-06 10:48:17 -参数 : [{limit=10, offset=0}]
+2018-11-06 10:48:17 -==>  Preparing: select `stu_book_id`,`user_id`,`book_name` from stu_book order by stu_book_id desc limit ?, ? 
+2018-11-06 10:48:17 -==> Parameters: 0(Integer), 10(Integer)
+2018-11-06 10:48:17 -<==      Total: 2
+2018-11-06 10:48:17 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:48:17 -==> Parameters: 1(Long)
+2018-11-06 10:48:17 -<==      Total: 1
+2018-11-06 10:48:17 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:48:17 -==> Parameters: 1(Long)
+2018-11-06 10:48:17 -<==      Total: 1
+2018-11-06 10:48:17 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:48:17 -==> Parameters: 6(Long)
+2018-11-06 10:48:17 -<==      Total: 1
+2018-11-06 10:48:17 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:48:17 -==> Parameters: 1(Long)
+2018-11-06 10:48:17 -<==      Total: 1
+2018-11-06 10:48:17 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:48:17 -==> Parameters: 1(Long)
+2018-11-06 10:48:17 -<==      Total: 1
+2018-11-06 10:48:17 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:48:17 -==> Parameters: 6(Long)
+2018-11-06 10:48:17 -<==      Total: 1
+2018-11-06 10:48:17 -==>  Preparing: select count(*) from stu_book 
+2018-11-06 10:48:17 -==> Parameters: 
+2018-11-06 10:48:17 -<==      Total: 1
+2018-11-06 10:48:17 -pageUtils: com.bootdo.common.utils.PageUtils@4848bf
+2018-11-06 10:48:17 -耗时 : 74
+2018-11-06 10:48:17 -返回值 : com.bootdo.common.utils.PageUtils@4848bf
+2018-11-06 10:49:11 -请求地址 : http://localhost/book/book/bookDataExport
+2018-11-06 10:49:11 -HTTP METHOD : GET
+2018-11-06 10:49:11 -CLASS_METHOD : com.bootdo.book.controller.BookController.studentDataExport
+2018-11-06 10:49:11 -参数 : [com.bootdo.book.domain.BookAndChapterDo@7d685b, org.apache.shiro.web.servlet.ShiroHttpServletResponse@189844]
+2018-11-06 10:49:11 -==>  Preparing: SELECT su.`name`as '用户',sb.book_name as '书名' FROM sys_user su,stu_book sb WHERE su.user_id=sb.user_id 
+2018-11-06 10:49:11 -==> Parameters: 
+2018-11-06 10:49:11 -<==      Total: 2
+2018-11-06 10:49:13 -耗时 : 1131
+2018-11-06 10:49:13 -返回值 : null
+2018-11-06 10:50:49 -请求地址 : http://localhost/login;JSESSIONID=ba927273-e34e-4845-84de-58f4a6cfedd2
+2018-11-06 10:50:49 -HTTP METHOD : GET
+2018-11-06 10:50:49 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-11-06 10:50:49 -参数 : []
+2018-11-06 10:50:49 -耗时 : 0
+2018-11-06 10:50:49 -返回值 : login
+2018-11-06 10:50:57 -请求地址 : http://localhost/login
+2018-11-06 10:50:57 -HTTP METHOD : POST
+2018-11-06 10:50:57 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-11-06 10:50:57 -参数 : [admin, 111111]
+2018-11-06 10:50:57 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-11-06 10:50:57 -==> Parameters: admin(String)
+2018-11-06 10:50:57 -<==      Total: 1
+2018-11-06 10:50:57 -user_id:1
+2018-11-06 10:50:57 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-11-06 10:50:57 -==> Parameters: admin(String)
+2018-11-06 10:50:57 -<==      Total: 1
+2018-11-06 10:50:57 -耗时 : 21
+2018-11-06 10:50:57 -返回值 : {msg=操作成功, code=0}
+2018-11-06 10:50:57 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:50:57 -==> Parameters: 1(Long), admin(String), 登录(String), 21(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-11-06 10:50:57.774(Timestamp)
+2018-11-06 10:50:57 -请求地址 : http://localhost/index
+2018-11-06 10:50:57 -HTTP METHOD : GET
+2018-11-06 10:50:57 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-11-06 10:50:57 -参数 : [{}]
+2018-11-06 10:50:57 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-11-06 10:50:57 -==> Parameters: 1(Long)
+2018-11-06 10:50:57 -<==    Updates: 1
+2018-11-06 10:50:57 -<==      Total: 31
+2018-11-06 10:50:57 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-11-06 10:50:57 -==> Parameters: 141(Long)
+2018-11-06 10:50:57 -<==      Total: 0
+2018-11-06 10:50:57 -耗时 : 131
+2018-11-06 10:50:57 -返回值 : index_v1
+2018-11-06 10:50:57 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:50:57 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 131(Integer), com.bootdo.system.controller.LoginController.index()(String), {"menus":[{"attributes":{"icon":"fa fa-bars","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-book","url":"/common/dict"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"78","parentId":"1","text":"数据字典"},{"attributes":{"icon":"fa fa-folder-open","url":"/common/sysFile"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","text":"基础管理"},{"attributes":{"icon":"fa fa-desktop"},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/user/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"6","parentId":"3","text":"用户管理"},{"attributes":{"icon":"fa fa-paw","url":"sys/role"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"3","text":"角色管理"},{"attributes":{"icon":"fa fa-th-list","url":"sys/menu/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"2","parentId":"3","text":"系统菜单"},{"attributes":{"icon":"fa fa-users","url":"/system/sysDept"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"73","parentId":"3","text":"部门管理"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","text":"系统管理"},{"attributes":{"icon":"fa fa-gear","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-code","url":"common/generator"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","text":"代码生成"},{"attributes":{"icon":"fa fa-hourglass-1","url":"common/job"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","text":"计划任务"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","text":"系统工具"},{"attributes":{"icon":"fa fa-video-camera","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/online"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","text":"在线用户"},{"attributes":{"icon":"fa fa-warning","url":"common/log"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"27","parentId":"91","text":"系统日志"},{"attributes":{"icon":"fa fa-caret-square-o-right","url":"/druid/index.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","text":"运行监控"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","text":"系统监控"},{"attributes":{"icon":"fa fa-laptop","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-bar-chart-o","url":"/oa/notify/overall"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"110","parentId":"84","text":"总体维度"},{"attributes":{"icon":"fa fa-envelope-square","url":"oa/notify/selfNotify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","text":"我的通知"},{"attributes":{"icon":"fa fa-pencil-square","url":"oa/notify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"85","parentId":"84","text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","text":"办公管理"},{"attributes":{"icon":"fa fa-rss","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-edit","url":"/blog/bContent/add"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","text":"发布文章"},{"attributes":{"icon":"fa fa-file-image-o","url":"blog/bContent"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"50","parentId":"49","text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","text":"博客管理"},{"attributes":{"icon":"fa fa-print","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-sort-amount-asc","url":"activiti/model"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"94","parentId":"93","text":"模型管理"},{"attributes":{"icon":"fa fa-flag","url":"activiti/process"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"96","parentId":"93","text":"流程管理"},{"attributes":{"icon":"","url":"activiti/task/todo"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","text":"待办任务"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","text":"工作流程"},{"attributes":{"icon":"fa fa-bar-chart","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-area-chart","url":"/chart/graph_echarts.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","text":"图表管理"},{"attributes":{"icon":"fa fa-thumbs-up","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-pencil","url":"book/bookChapter"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"109","parentId":"104","text":"章节及心得"},{"attributes":{"icon":"fa fa-folder-open","url":"/book/book"},"checked":false,"children":[],"hasChildren":(String), 127.0.0.1(String), 2018-11-06 10:50:57.926(Timestamp)
+2018-11-06 10:50:58 -请求地址 : http://localhost/main
+2018-11-06 10:50:58 -HTTP METHOD : GET
+2018-11-06 10:50:58 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:50:58 -参数 : []
+2018-11-06 10:50:58 -耗时 : 1
+2018-11-06 10:50:58 -返回值 : main
+2018-11-06 10:50:58 -<==    Updates: 1
+2018-11-06 10:50:58 -请求地址 : http://localhost/oa/notify/message
+2018-11-06 10:50:58 -HTTP METHOD : GET
+2018-11-06 10:50:58 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-11-06 10:50:58 -参数 : []
+2018-11-06 10:50:58 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:50:58 -null
+java.lang.NullPointerException: null
+	at com.bootdo.oa.service.impl.NotifyServiceImpl.selfList(NotifyServiceImpl.java:124)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$FastClassBySpringCGLIB$$ed38790f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$EnhancerBySpringCGLIB$$5049e6c5.selfList(<generated>)
+	at com.bootdo.oa.controller.NotifyController.message(NotifyController.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.bootdo.common.aspect.WebLogAspect.doAround(WebLogAspect.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bootdo.oa.controller.NotifyController$$EnhancerBySpringCGLIB$$691602e6.message(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-11-06 10:50:58 -==> Parameters: 1(Long), admin(String), error(String), null, http://localhost/oa/notify/message(String), java.lang.NullPointerException(String), null, 2018-11-06 10:50:58.61(Timestamp)
+2018-11-06 10:50:58 -请求地址 : http://localhost/main
+2018-11-06 10:50:58 -HTTP METHOD : GET
+2018-11-06 10:50:58 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:50:58 -参数 : []
+2018-11-06 10:50:58 -耗时 : 1
+2018-11-06 10:50:58 -返回值 : main
+2018-11-06 10:50:58 -<==    Updates: 1
+2018-11-06 10:51:01 -请求地址 : http://localhost/book/book
+2018-11-06 10:51:01 -HTTP METHOD : GET
+2018-11-06 10:51:01 -CLASS_METHOD : com.bootdo.book.controller.BookController.Book
+2018-11-06 10:51:01 -参数 : []
+2018-11-06 10:51:01 -耗时 : 0
+2018-11-06 10:51:01 -返回值 : book/book/book
+2018-11-06 10:51:01 -请求地址 : http://localhost/book/book/list
+2018-11-06 10:51:01 -HTTP METHOD : GET
+2018-11-06 10:51:01 -CLASS_METHOD : com.bootdo.book.controller.BookController.list
+2018-11-06 10:51:01 -参数 : [{limit=10, offset=0}]
+2018-11-06 10:51:01 -==>  Preparing: select `stu_book_id`,`user_id`,`book_name` from stu_book order by stu_book_id desc limit ?, ? 
+2018-11-06 10:51:01 -==> Parameters: 0(Integer), 10(Integer)
+2018-11-06 10:51:01 -<==      Total: 2
+2018-11-06 10:51:01 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:51:01 -==> Parameters: 1(Long)
+2018-11-06 10:51:01 -<==      Total: 1
+2018-11-06 10:51:01 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:51:01 -==> Parameters: 1(Long)
+2018-11-06 10:51:01 -<==      Total: 1
+2018-11-06 10:51:01 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:51:01 -==> Parameters: 6(Long)
+2018-11-06 10:51:01 -<==      Total: 1
+2018-11-06 10:51:01 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:51:01 -==> Parameters: 1(Long)
+2018-11-06 10:51:01 -<==      Total: 1
+2018-11-06 10:51:01 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:51:01 -==> Parameters: 1(Long)
+2018-11-06 10:51:01 -<==      Total: 1
+2018-11-06 10:51:01 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:51:01 -==> Parameters: 6(Long)
+2018-11-06 10:51:01 -<==      Total: 1
+2018-11-06 10:51:01 -==>  Preparing: select count(*) from stu_book 
+2018-11-06 10:51:01 -==> Parameters: 
+2018-11-06 10:51:01 -<==      Total: 1
+2018-11-06 10:51:01 -pageUtils: com.bootdo.common.utils.PageUtils@4e964
+2018-11-06 10:51:01 -耗时 : 21
+2018-11-06 10:51:01 -返回值 : com.bootdo.common.utils.PageUtils@4e964
+2018-11-06 10:51:54 -请求地址 : http://localhost/index
+2018-11-06 10:51:54 -HTTP METHOD : GET
+2018-11-06 10:51:54 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-11-06 10:51:54 -参数 : [{}]
+2018-11-06 10:51:54 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-11-06 10:51:54 -==> Parameters: 1(Long)
+2018-11-06 10:51:54 -<==      Total: 31
+2018-11-06 10:51:54 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-11-06 10:51:54 -==> Parameters: 141(Long)
+2018-11-06 10:51:54 -<==      Total: 0
+2018-11-06 10:51:54 -耗时 : 12
+2018-11-06 10:51:54 -返回值 : index_v1
+2018-11-06 10:51:54 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:51:54 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 12(Integer), com.bootdo.system.controller.LoginController.index()(String), {"menus":[{"attributes":{"icon":"fa fa-bars","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-book","url":"/common/dict"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"78","parentId":"1","text":"数据字典"},{"attributes":{"icon":"fa fa-folder-open","url":"/common/sysFile"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","text":"基础管理"},{"attributes":{"icon":"fa fa-desktop"},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/user/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"6","parentId":"3","text":"用户管理"},{"attributes":{"icon":"fa fa-paw","url":"sys/role"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"3","text":"角色管理"},{"attributes":{"icon":"fa fa-th-list","url":"sys/menu/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"2","parentId":"3","text":"系统菜单"},{"attributes":{"icon":"fa fa-users","url":"/system/sysDept"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"73","parentId":"3","text":"部门管理"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","text":"系统管理"},{"attributes":{"icon":"fa fa-gear","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-code","url":"common/generator"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","text":"代码生成"},{"attributes":{"icon":"fa fa-hourglass-1","url":"common/job"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","text":"计划任务"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","text":"系统工具"},{"attributes":{"icon":"fa fa-video-camera","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/online"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","text":"在线用户"},{"attributes":{"icon":"fa fa-warning","url":"common/log"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"27","parentId":"91","text":"系统日志"},{"attributes":{"icon":"fa fa-caret-square-o-right","url":"/druid/index.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","text":"运行监控"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","text":"系统监控"},{"attributes":{"icon":"fa fa-laptop","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-bar-chart-o","url":"/oa/notify/overall"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"110","parentId":"84","text":"总体维度"},{"attributes":{"icon":"fa fa-envelope-square","url":"oa/notify/selfNotify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","text":"我的通知"},{"attributes":{"icon":"fa fa-pencil-square","url":"oa/notify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"85","parentId":"84","text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","text":"办公管理"},{"attributes":{"icon":"fa fa-rss","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-edit","url":"/blog/bContent/add"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","text":"发布文章"},{"attributes":{"icon":"fa fa-file-image-o","url":"blog/bContent"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"50","parentId":"49","text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","text":"博客管理"},{"attributes":{"icon":"fa fa-print","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-sort-amount-asc","url":"activiti/model"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"94","parentId":"93","text":"模型管理"},{"attributes":{"icon":"fa fa-flag","url":"activiti/process"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"96","parentId":"93","text":"流程管理"},{"attributes":{"icon":"","url":"activiti/task/todo"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","text":"待办任务"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","text":"工作流程"},{"attributes":{"icon":"fa fa-bar-chart","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-area-chart","url":"/chart/graph_echarts.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","text":"图表管理"},{"attributes":{"icon":"fa fa-thumbs-up","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-pencil","url":"book/bookChapter"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"109","parentId":"104","text":"章节及心得"},{"attributes":{"icon":"fa fa-folder-open","url":"/book/book"},"checked":false,"children":[],"hasChildren":(String), 127.0.0.1(String), 2018-11-06 10:51:54.043(Timestamp)
+2018-11-06 10:51:54 -<==    Updates: 1
+2018-11-06 10:51:54 -请求地址 : http://localhost/main
+2018-11-06 10:51:54 -HTTP METHOD : GET
+2018-11-06 10:51:54 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:51:54 -参数 : []
+2018-11-06 10:51:54 -耗时 : 1
+2018-11-06 10:51:54 -返回值 : main
+2018-11-06 10:51:54 -请求地址 : http://localhost/oa/notify/message
+2018-11-06 10:51:54 -HTTP METHOD : GET
+2018-11-06 10:51:54 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-11-06 10:51:54 -参数 : []
+2018-11-06 10:51:54 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:51:54 -null
+java.lang.NullPointerException: null
+	at com.bootdo.oa.service.impl.NotifyServiceImpl.selfList(NotifyServiceImpl.java:124)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$FastClassBySpringCGLIB$$ed38790f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$EnhancerBySpringCGLIB$$5049e6c5.selfList(<generated>)
+	at com.bootdo.oa.controller.NotifyController.message(NotifyController.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.bootdo.common.aspect.WebLogAspect.doAround(WebLogAspect.java:57)
+	at sun.reflect.GeneratedMethodAccessor169.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bootdo.oa.controller.NotifyController$$EnhancerBySpringCGLIB$$691602e6.message(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-11-06 10:51:54 -==> Parameters: 1(Long), admin(String), error(String), null, http://localhost/oa/notify/message(String), java.lang.NullPointerException(String), null, 2018-11-06 10:51:54.189(Timestamp)
+2018-11-06 10:51:54 -<==    Updates: 1
+2018-11-06 10:51:54 -请求地址 : http://localhost/main
+2018-11-06 10:51:54 -HTTP METHOD : GET
+2018-11-06 10:51:54 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:51:54 -参数 : []
+2018-11-06 10:51:54 -耗时 : 0
+2018-11-06 10:51:54 -返回值 : main
+2018-11-06 10:51:56 -请求地址 : http://localhost/book/book
+2018-11-06 10:51:56 -HTTP METHOD : GET
+2018-11-06 10:51:56 -CLASS_METHOD : com.bootdo.book.controller.BookController.Book
+2018-11-06 10:51:56 -参数 : []
+2018-11-06 10:51:56 -耗时 : 1
+2018-11-06 10:51:56 -返回值 : book/book/book
+2018-11-06 10:51:56 -请求地址 : http://localhost/book/book/list
+2018-11-06 10:51:56 -HTTP METHOD : GET
+2018-11-06 10:51:56 -CLASS_METHOD : com.bootdo.book.controller.BookController.list
+2018-11-06 10:51:56 -参数 : [{limit=10, offset=0}]
+2018-11-06 10:51:56 -==>  Preparing: select `stu_book_id`,`user_id`,`book_name` from stu_book order by stu_book_id desc limit ?, ? 
+2018-11-06 10:51:56 -==> Parameters: 0(Integer), 10(Integer)
+2018-11-06 10:51:56 -<==      Total: 2
+2018-11-06 10:51:56 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:51:56 -==> Parameters: 1(Long)
+2018-11-06 10:51:56 -<==      Total: 1
+2018-11-06 10:51:56 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:51:56 -==> Parameters: 1(Long)
+2018-11-06 10:51:56 -<==      Total: 1
+2018-11-06 10:51:56 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:51:56 -==> Parameters: 6(Long)
+2018-11-06 10:51:56 -<==      Total: 1
+2018-11-06 10:51:56 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:51:56 -==> Parameters: 1(Long)
+2018-11-06 10:51:56 -<==      Total: 1
+2018-11-06 10:51:56 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:51:56 -==> Parameters: 1(Long)
+2018-11-06 10:51:56 -<==      Total: 1
+2018-11-06 10:51:56 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:51:56 -==> Parameters: 6(Long)
+2018-11-06 10:51:56 -<==      Total: 1
+2018-11-06 10:51:56 -==>  Preparing: select count(*) from stu_book 
+2018-11-06 10:51:56 -==> Parameters: 
+2018-11-06 10:51:56 -<==      Total: 1
+2018-11-06 10:51:56 -pageUtils: com.bootdo.common.utils.PageUtils@189fc32
+2018-11-06 10:51:56 -耗时 : 20
+2018-11-06 10:51:56 -返回值 : com.bootdo.common.utils.PageUtils@189fc32
+2018-11-06 10:52:21 -请求地址 : http://localhost/index
+2018-11-06 10:52:21 -HTTP METHOD : GET
+2018-11-06 10:52:21 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-11-06 10:52:21 -参数 : [{}]
+2018-11-06 10:52:21 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-11-06 10:52:21 -==> Parameters: 1(Long)
+2018-11-06 10:52:21 -<==      Total: 31
+2018-11-06 10:52:21 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-11-06 10:52:21 -==> Parameters: 141(Long)
+2018-11-06 10:52:21 -<==      Total: 0
+2018-11-06 10:52:21 -耗时 : 14
+2018-11-06 10:52:21 -返回值 : index_v1
+2018-11-06 10:52:21 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:52:21 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 14(Integer), com.bootdo.system.controller.LoginController.index()(String), {"menus":[{"attributes":{"icon":"fa fa-bars","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-book","url":"/common/dict"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"78","parentId":"1","text":"数据字典"},{"attributes":{"icon":"fa fa-folder-open","url":"/common/sysFile"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","text":"基础管理"},{"attributes":{"icon":"fa fa-desktop"},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/user/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"6","parentId":"3","text":"用户管理"},{"attributes":{"icon":"fa fa-paw","url":"sys/role"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"3","text":"角色管理"},{"attributes":{"icon":"fa fa-th-list","url":"sys/menu/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"2","parentId":"3","text":"系统菜单"},{"attributes":{"icon":"fa fa-users","url":"/system/sysDept"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"73","parentId":"3","text":"部门管理"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","text":"系统管理"},{"attributes":{"icon":"fa fa-gear","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-code","url":"common/generator"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","text":"代码生成"},{"attributes":{"icon":"fa fa-hourglass-1","url":"common/job"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","text":"计划任务"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","text":"系统工具"},{"attributes":{"icon":"fa fa-video-camera","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/online"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","text":"在线用户"},{"attributes":{"icon":"fa fa-warning","url":"common/log"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"27","parentId":"91","text":"系统日志"},{"attributes":{"icon":"fa fa-caret-square-o-right","url":"/druid/index.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","text":"运行监控"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","text":"系统监控"},{"attributes":{"icon":"fa fa-laptop","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-bar-chart-o","url":"/oa/notify/overall"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"110","parentId":"84","text":"总体维度"},{"attributes":{"icon":"fa fa-envelope-square","url":"oa/notify/selfNotify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","text":"我的通知"},{"attributes":{"icon":"fa fa-pencil-square","url":"oa/notify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"85","parentId":"84","text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","text":"办公管理"},{"attributes":{"icon":"fa fa-rss","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-edit","url":"/blog/bContent/add"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","text":"发布文章"},{"attributes":{"icon":"fa fa-file-image-o","url":"blog/bContent"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"50","parentId":"49","text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","text":"博客管理"},{"attributes":{"icon":"fa fa-print","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-sort-amount-asc","url":"activiti/model"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"94","parentId":"93","text":"模型管理"},{"attributes":{"icon":"fa fa-flag","url":"activiti/process"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"96","parentId":"93","text":"流程管理"},{"attributes":{"icon":"","url":"activiti/task/todo"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","text":"待办任务"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","text":"工作流程"},{"attributes":{"icon":"fa fa-bar-chart","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-area-chart","url":"/chart/graph_echarts.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","text":"图表管理"},{"attributes":{"icon":"fa fa-thumbs-up","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-pencil","url":"book/bookChapter"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"109","parentId":"104","text":"章节及心得"},{"attributes":{"icon":"fa fa-folder-open","url":"/book/book"},"checked":false,"children":[],"hasChildren":(String), 127.0.0.1(String), 2018-11-06 10:52:21.558(Timestamp)
+2018-11-06 10:52:21 -<==    Updates: 1
+2018-11-06 10:52:21 -请求地址 : http://localhost/main
+2018-11-06 10:52:21 -HTTP METHOD : GET
+2018-11-06 10:52:21 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:52:21 -参数 : []
+2018-11-06 10:52:21 -耗时 : 1
+2018-11-06 10:52:21 -返回值 : main
+2018-11-06 10:52:21 -请求地址 : http://localhost/oa/notify/message
+2018-11-06 10:52:21 -HTTP METHOD : GET
+2018-11-06 10:52:21 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-11-06 10:52:21 -参数 : []
+2018-11-06 10:52:21 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:52:21 -==> Parameters: 1(Long), admin(String), error(String), null, http://localhost/oa/notify/message(String), java.lang.NullPointerException(String), null, 2018-11-06 10:52:21.776(Timestamp)
+2018-11-06 10:52:21 -null
+java.lang.NullPointerException: null
+	at com.bootdo.oa.service.impl.NotifyServiceImpl.selfList(NotifyServiceImpl.java:124)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$FastClassBySpringCGLIB$$ed38790f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$EnhancerBySpringCGLIB$$5049e6c5.selfList(<generated>)
+	at com.bootdo.oa.controller.NotifyController.message(NotifyController.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.bootdo.common.aspect.WebLogAspect.doAround(WebLogAspect.java:57)
+	at sun.reflect.GeneratedMethodAccessor169.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bootdo.oa.controller.NotifyController$$EnhancerBySpringCGLIB$$691602e6.message(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-11-06 10:52:21 -请求地址 : http://localhost/main
+2018-11-06 10:52:21 -HTTP METHOD : GET
+2018-11-06 10:52:21 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:52:21 -参数 : []
+2018-11-06 10:52:21 -耗时 : 1
+2018-11-06 10:52:21 -返回值 : main
+2018-11-06 10:52:21 -<==    Updates: 1
+2018-11-06 10:52:24 -请求地址 : http://localhost/book/book
+2018-11-06 10:52:24 -HTTP METHOD : GET
+2018-11-06 10:52:24 -CLASS_METHOD : com.bootdo.book.controller.BookController.Book
+2018-11-06 10:52:24 -参数 : []
+2018-11-06 10:52:24 -耗时 : 1
+2018-11-06 10:52:24 -返回值 : book/book/book
+2018-11-06 10:52:24 -请求地址 : http://localhost/book/book/list
+2018-11-06 10:52:24 -HTTP METHOD : GET
+2018-11-06 10:52:24 -CLASS_METHOD : com.bootdo.book.controller.BookController.list
+2018-11-06 10:52:24 -参数 : [{limit=10, offset=0}]
+2018-11-06 10:52:24 -==>  Preparing: select `stu_book_id`,`user_id`,`book_name` from stu_book order by stu_book_id desc limit ?, ? 
+2018-11-06 10:52:24 -==> Parameters: 0(Integer), 10(Integer)
+2018-11-06 10:52:24 -<==      Total: 2
+2018-11-06 10:52:24 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:52:24 -==> Parameters: 1(Long)
+2018-11-06 10:52:24 -<==      Total: 1
+2018-11-06 10:52:24 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:52:24 -==> Parameters: 1(Long)
+2018-11-06 10:52:24 -<==      Total: 1
+2018-11-06 10:52:24 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:52:24 -==> Parameters: 6(Long)
+2018-11-06 10:52:24 -<==      Total: 1
+2018-11-06 10:52:24 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:52:24 -==> Parameters: 1(Long)
+2018-11-06 10:52:24 -<==      Total: 1
+2018-11-06 10:52:24 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:52:24 -==> Parameters: 1(Long)
+2018-11-06 10:52:24 -<==      Total: 1
+2018-11-06 10:52:24 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:52:24 -==> Parameters: 6(Long)
+2018-11-06 10:52:24 -<==      Total: 1
+2018-11-06 10:52:24 -==>  Preparing: select count(*) from stu_book 
+2018-11-06 10:52:24 -==> Parameters: 
+2018-11-06 10:52:24 -<==      Total: 1
+2018-11-06 10:52:24 -pageUtils: com.bootdo.common.utils.PageUtils@1daa6ba
+2018-11-06 10:52:24 -耗时 : 17
+2018-11-06 10:52:24 -返回值 : com.bootdo.common.utils.PageUtils@1daa6ba
+2018-11-06 10:53:20 -请求地址 : http://localhost/index
+2018-11-06 10:53:20 -HTTP METHOD : GET
+2018-11-06 10:53:20 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-11-06 10:53:20 -参数 : [{}]
+2018-11-06 10:53:20 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-11-06 10:53:20 -==> Parameters: 1(Long)
+2018-11-06 10:53:20 -<==      Total: 31
+2018-11-06 10:53:20 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-11-06 10:53:20 -==> Parameters: 141(Long)
+2018-11-06 10:53:20 -<==      Total: 0
+2018-11-06 10:53:20 -耗时 : 15
+2018-11-06 10:53:20 -返回值 : index_v1
+2018-11-06 10:53:20 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:53:20 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 15(Integer), com.bootdo.system.controller.LoginController.index()(String), {"menus":[{"attributes":{"icon":"fa fa-bars","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-book","url":"/common/dict"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"78","parentId":"1","text":"数据字典"},{"attributes":{"icon":"fa fa-folder-open","url":"/common/sysFile"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","text":"基础管理"},{"attributes":{"icon":"fa fa-desktop"},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/user/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"6","parentId":"3","text":"用户管理"},{"attributes":{"icon":"fa fa-paw","url":"sys/role"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"3","text":"角色管理"},{"attributes":{"icon":"fa fa-th-list","url":"sys/menu/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"2","parentId":"3","text":"系统菜单"},{"attributes":{"icon":"fa fa-users","url":"/system/sysDept"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"73","parentId":"3","text":"部门管理"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","text":"系统管理"},{"attributes":{"icon":"fa fa-gear","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-code","url":"common/generator"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","text":"代码生成"},{"attributes":{"icon":"fa fa-hourglass-1","url":"common/job"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","text":"计划任务"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","text":"系统工具"},{"attributes":{"icon":"fa fa-video-camera","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/online"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","text":"在线用户"},{"attributes":{"icon":"fa fa-warning","url":"common/log"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"27","parentId":"91","text":"系统日志"},{"attributes":{"icon":"fa fa-caret-square-o-right","url":"/druid/index.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","text":"运行监控"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","text":"系统监控"},{"attributes":{"icon":"fa fa-laptop","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-bar-chart-o","url":"/oa/notify/overall"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"110","parentId":"84","text":"总体维度"},{"attributes":{"icon":"fa fa-envelope-square","url":"oa/notify/selfNotify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","text":"我的通知"},{"attributes":{"icon":"fa fa-pencil-square","url":"oa/notify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"85","parentId":"84","text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","text":"办公管理"},{"attributes":{"icon":"fa fa-rss","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-edit","url":"/blog/bContent/add"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","text":"发布文章"},{"attributes":{"icon":"fa fa-file-image-o","url":"blog/bContent"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"50","parentId":"49","text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","text":"博客管理"},{"attributes":{"icon":"fa fa-print","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-sort-amount-asc","url":"activiti/model"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"94","parentId":"93","text":"模型管理"},{"attributes":{"icon":"fa fa-flag","url":"activiti/process"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"96","parentId":"93","text":"流程管理"},{"attributes":{"icon":"","url":"activiti/task/todo"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","text":"待办任务"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","text":"工作流程"},{"attributes":{"icon":"fa fa-bar-chart","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-area-chart","url":"/chart/graph_echarts.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","text":"图表管理"},{"attributes":{"icon":"fa fa-thumbs-up","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-pencil","url":"book/bookChapter"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"109","parentId":"104","text":"章节及心得"},{"attributes":{"icon":"fa fa-folder-open","url":"/book/book"},"checked":false,"children":[],"hasChildren":(String), 127.0.0.1(String), 2018-11-06 10:53:20.984(Timestamp)
+2018-11-06 10:53:21 -请求地址 : http://localhost/main
+2018-11-06 10:53:21 -HTTP METHOD : GET
+2018-11-06 10:53:21 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:53:21 -参数 : []
+2018-11-06 10:53:21 -耗时 : 0
+2018-11-06 10:53:21 -返回值 : main
+2018-11-06 10:53:21 -请求地址 : http://localhost/oa/notify/message
+2018-11-06 10:53:21 -HTTP METHOD : GET
+2018-11-06 10:53:21 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-11-06 10:53:21 -参数 : []
+2018-11-06 10:53:21 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:53:21 -null
+java.lang.NullPointerException: null
+	at com.bootdo.oa.service.impl.NotifyServiceImpl.selfList(NotifyServiceImpl.java:124)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$FastClassBySpringCGLIB$$ed38790f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$EnhancerBySpringCGLIB$$5049e6c5.selfList(<generated>)
+	at com.bootdo.oa.controller.NotifyController.message(NotifyController.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.bootdo.common.aspect.WebLogAspect.doAround(WebLogAspect.java:57)
+	at sun.reflect.GeneratedMethodAccessor169.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bootdo.oa.controller.NotifyController$$EnhancerBySpringCGLIB$$691602e6.message(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-11-06 10:53:21 -==> Parameters: 1(Long), admin(String), error(String), null, http://localhost/oa/notify/message(String), java.lang.NullPointerException(String), null, 2018-11-06 10:53:21.101(Timestamp)
+2018-11-06 10:53:21 -<==    Updates: 1
+2018-11-06 10:53:21 -请求地址 : http://localhost/main
+2018-11-06 10:53:21 -HTTP METHOD : GET
+2018-11-06 10:53:21 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:53:21 -参数 : []
+2018-11-06 10:53:21 -耗时 : 0
+2018-11-06 10:53:21 -返回值 : main
+2018-11-06 10:53:21 -<==    Updates: 1
+2018-11-06 10:53:24 -请求地址 : http://localhost/book/book
+2018-11-06 10:53:24 -HTTP METHOD : GET
+2018-11-06 10:53:24 -CLASS_METHOD : com.bootdo.book.controller.BookController.Book
+2018-11-06 10:53:24 -参数 : []
+2018-11-06 10:53:24 -耗时 : 1
+2018-11-06 10:53:24 -返回值 : book/book/book
+2018-11-06 10:53:24 -请求地址 : http://localhost/book/book/list
+2018-11-06 10:53:24 -HTTP METHOD : GET
+2018-11-06 10:53:24 -CLASS_METHOD : com.bootdo.book.controller.BookController.list
+2018-11-06 10:53:24 -参数 : [{limit=10, offset=0}]
+2018-11-06 10:53:24 -==>  Preparing: select `stu_book_id`,`user_id`,`book_name` from stu_book order by stu_book_id desc limit ?, ? 
+2018-11-06 10:53:24 -==> Parameters: 0(Integer), 10(Integer)
+2018-11-06 10:53:24 -<==      Total: 2
+2018-11-06 10:53:24 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:53:24 -==> Parameters: 1(Long)
+2018-11-06 10:53:24 -<==      Total: 1
+2018-11-06 10:53:24 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:53:24 -==> Parameters: 1(Long)
+2018-11-06 10:53:24 -<==      Total: 1
+2018-11-06 10:53:24 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:53:24 -==> Parameters: 6(Long)
+2018-11-06 10:53:24 -<==      Total: 1
+2018-11-06 10:53:24 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:53:24 -==> Parameters: 1(Long)
+2018-11-06 10:53:24 -<==      Total: 1
+2018-11-06 10:53:24 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:53:24 -==> Parameters: 1(Long)
+2018-11-06 10:53:24 -<==      Total: 1
+2018-11-06 10:53:24 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:53:24 -==> Parameters: 6(Long)
+2018-11-06 10:53:24 -<==      Total: 1
+2018-11-06 10:53:24 -==>  Preparing: select count(*) from stu_book 
+2018-11-06 10:53:24 -==> Parameters: 
+2018-11-06 10:53:24 -<==      Total: 1
+2018-11-06 10:53:24 -pageUtils: com.bootdo.common.utils.PageUtils@9d8d2d
+2018-11-06 10:53:24 -耗时 : 19
+2018-11-06 10:53:24 -返回值 : com.bootdo.common.utils.PageUtils@9d8d2d
+2018-11-06 10:54:02 -请求地址 : http://localhost/index
+2018-11-06 10:54:02 -HTTP METHOD : GET
+2018-11-06 10:54:02 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-11-06 10:54:02 -参数 : [{}]
+2018-11-06 10:54:02 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-11-06 10:54:02 -==> Parameters: 1(Long)
+2018-11-06 10:54:02 -<==      Total: 31
+2018-11-06 10:54:02 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-11-06 10:54:02 -==> Parameters: 141(Long)
+2018-11-06 10:54:02 -<==      Total: 0
+2018-11-06 10:54:02 -耗时 : 12
+2018-11-06 10:54:02 -返回值 : index_v1
+2018-11-06 10:54:02 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:54:02 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 12(Integer), com.bootdo.system.controller.LoginController.index()(String), {"menus":[{"attributes":{"icon":"fa fa-bars","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-book","url":"/common/dict"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"78","parentId":"1","text":"数据字典"},{"attributes":{"icon":"fa fa-folder-open","url":"/common/sysFile"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"71","parentId":"1","text":"文件管理"}],"hasChildren":true,"hasParent":false,"id":"1","parentId":"0","text":"基础管理"},{"attributes":{"icon":"fa fa-desktop"},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/user/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"6","parentId":"3","text":"用户管理"},{"attributes":{"icon":"fa fa-paw","url":"sys/role"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"3","text":"角色管理"},{"attributes":{"icon":"fa fa-th-list","url":"sys/menu/"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"2","parentId":"3","text":"系统菜单"},{"attributes":{"icon":"fa fa-users","url":"/system/sysDept"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"73","parentId":"3","text":"部门管理"}],"hasChildren":true,"hasParent":false,"id":"3","parentId":"0","text":"系统管理"},{"attributes":{"icon":"fa fa-gear","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-code","url":"common/generator"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"48","parentId":"77","text":"代码生成"},{"attributes":{"icon":"fa fa-hourglass-1","url":"common/job"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"72","parentId":"77","text":"计划任务"}],"hasChildren":true,"hasParent":false,"id":"77","parentId":"0","text":"系统工具"},{"attributes":{"icon":"fa fa-video-camera","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-user","url":"sys/online"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"92","parentId":"91","text":"在线用户"},{"attributes":{"icon":"fa fa-warning","url":"common/log"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"27","parentId":"91","text":"系统日志"},{"attributes":{"icon":"fa fa-caret-square-o-right","url":"/druid/index.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"57","parentId":"91","text":"运行监控"}],"hasChildren":true,"hasParent":false,"id":"91","parentId":"0","text":"系统监控"},{"attributes":{"icon":"fa fa-laptop","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-bar-chart-o","url":"/oa/notify/overall"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"110","parentId":"84","text":"总体维度"},{"attributes":{"icon":"fa fa-envelope-square","url":"oa/notify/selfNotify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"90","parentId":"84","text":"我的通知"},{"attributes":{"icon":"fa fa-pencil-square","url":"oa/notify"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"85","parentId":"84","text":"通知公告"}],"hasChildren":true,"hasParent":false,"id":"84","parentId":"0","text":"办公管理"},{"attributes":{"icon":"fa fa-rss","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-edit","url":"/blog/bContent/add"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"68","parentId":"49","text":"发布文章"},{"attributes":{"icon":"fa fa-file-image-o","url":"blog/bContent"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"50","parentId":"49","text":"文章列表"}],"hasChildren":true,"hasParent":false,"id":"49","parentId":"0","text":"博客管理"},{"attributes":{"icon":"fa fa-print","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-sort-amount-asc","url":"activiti/model"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"94","parentId":"93","text":"模型管理"},{"attributes":{"icon":"fa fa-flag","url":"activiti/process"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"96","parentId":"93","text":"流程管理"},{"attributes":{"icon":"","url":"activiti/task/todo"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"101","parentId":"93","text":"待办任务"}],"hasChildren":true,"hasParent":false,"id":"93","parentId":"0","text":"工作流程"},{"attributes":{"icon":"fa fa-bar-chart","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-area-chart","url":"/chart/graph_echarts.html"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"98","parentId":"97","text":"百度chart"}],"hasChildren":true,"hasParent":false,"id":"97","parentId":"0","text":"图表管理"},{"attributes":{"icon":"fa fa-thumbs-up","url":""},"checked":false,"children":[{"attributes":{"icon":"fa fa-pencil","url":"book/bookChapter"},"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"109","parentId":"104","text":"章节及心得"},{"attributes":{"icon":"fa fa-folder-open","url":"/book/book"},"checked":false,"children":[],"hasChildren":(String), 127.0.0.1(String), 2018-11-06 10:54:02.564(Timestamp)
+2018-11-06 10:54:02 -请求地址 : http://localhost/main
+2018-11-06 10:54:02 -HTTP METHOD : GET
+2018-11-06 10:54:02 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:54:02 -参数 : []
+2018-11-06 10:54:02 -耗时 : 1
+2018-11-06 10:54:02 -返回值 : main
+2018-11-06 10:54:02 -<==    Updates: 1
+2018-11-06 10:54:02 -请求地址 : http://localhost/oa/notify/message
+2018-11-06 10:54:02 -HTTP METHOD : GET
+2018-11-06 10:54:02 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-11-06 10:54:02 -参数 : []
+2018-11-06 10:54:02 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-11-06 10:54:02 -==> Parameters: 1(Long), admin(String), error(String), null, http://localhost/oa/notify/message(String), java.lang.NullPointerException(String), null, 2018-11-06 10:54:02.741(Timestamp)
+2018-11-06 10:54:02 -null
+java.lang.NullPointerException: null
+	at com.bootdo.oa.service.impl.NotifyServiceImpl.selfList(NotifyServiceImpl.java:124)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$FastClassBySpringCGLIB$$ed38790f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.bootdo.oa.service.impl.NotifyServiceImpl$$EnhancerBySpringCGLIB$$5049e6c5.selfList(<generated>)
+	at com.bootdo.oa.controller.NotifyController.message(NotifyController.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.bootdo.common.aspect.WebLogAspect.doAround(WebLogAspect.java:57)
+	at sun.reflect.GeneratedMethodAccessor169.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bootdo.oa.controller.NotifyController$$EnhancerBySpringCGLIB$$691602e6.message(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-11-06 10:54:02 -请求地址 : http://localhost/main
+2018-11-06 10:54:02 -HTTP METHOD : GET
+2018-11-06 10:54:02 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-11-06 10:54:02 -参数 : []
+2018-11-06 10:54:02 -耗时 : 2
+2018-11-06 10:54:02 -返回值 : main
+2018-11-06 10:54:03 -<==    Updates: 1
+2018-11-06 10:54:05 -请求地址 : http://localhost/book/book
+2018-11-06 10:54:05 -HTTP METHOD : GET
+2018-11-06 10:54:05 -CLASS_METHOD : com.bootdo.book.controller.BookController.Book
+2018-11-06 10:54:05 -参数 : []
+2018-11-06 10:54:05 -耗时 : 0
+2018-11-06 10:54:05 -返回值 : book/book/book
+2018-11-06 10:54:05 -请求地址 : http://localhost/book/book/list
+2018-11-06 10:54:05 -HTTP METHOD : GET
+2018-11-06 10:54:05 -CLASS_METHOD : com.bootdo.book.controller.BookController.list
+2018-11-06 10:54:05 -参数 : [{limit=10, offset=0}]
+2018-11-06 10:54:05 -==>  Preparing: select `stu_book_id`,`user_id`,`book_name` from stu_book order by stu_book_id desc limit ?, ? 
+2018-11-06 10:54:05 -==> Parameters: 0(Integer), 10(Integer)
+2018-11-06 10:54:05 -<==      Total: 2
+2018-11-06 10:54:05 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:54:05 -==> Parameters: 1(Long)
+2018-11-06 10:54:05 -<==      Total: 1
+2018-11-06 10:54:05 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:54:05 -==> Parameters: 1(Long)
+2018-11-06 10:54:05 -<==      Total: 1
+2018-11-06 10:54:05 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:54:05 -==> Parameters: 6(Long)
+2018-11-06 10:54:05 -<==      Total: 1
+2018-11-06 10:54:05 -==>  Preparing: select role_id from sys_user_role where user_id=? 
+2018-11-06 10:54:05 -==> Parameters: 1(Long)
+2018-11-06 10:54:05 -<==      Total: 1
+2018-11-06 10:54:05 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-11-06 10:54:05 -==> Parameters: 1(Long)
+2018-11-06 10:54:05 -<==      Total: 1
+2018-11-06 10:54:05 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept where dept_id = ? 
+2018-11-06 10:54:05 -==> Parameters: 6(Long)
+2018-11-06 10:54:05 -<==      Total: 1
+2018-11-06 10:54:05 -==>  Preparing: select count(*) from stu_book 
+2018-11-06 10:54:05 -==> Parameters: 
+2018-11-06 10:54:05 -<==      Total: 1
+2018-11-06 10:54:05 -pageUtils: com.bootdo.common.utils.PageUtils@bb39c7
+2018-11-06 10:54:05 -耗时 : 26
+2018-11-06 10:54:05 -返回值 : com.bootdo.common.utils.PageUtils@bb39c7

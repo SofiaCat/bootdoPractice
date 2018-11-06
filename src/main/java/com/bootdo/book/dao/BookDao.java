@@ -29,4 +29,6 @@ public interface BookDao {
 	int remove(String stu_book_id);
 	
 	int batchRemove(String[] stuBookIds);
+
+	List<Map<String,Object>>allList();
 }

@@ -1,5 +1,8 @@
 package com.bootdo.oa.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
+import com.bootdo.common.utils.HttpClientUtil;
+import com.bootdo.oa.domain.UserTimeDao;
 import com.bootdo.system.domain.UserDO;
 import com.bootdo.system.service.SessionService;
 import org.apache.shiro.session.Session;
@@ -27,7 +30,7 @@ import com.bootdo.system.dao.UserDao;
 
 @Service
 public class NotifyServiceImpl implements NotifyService {
-    @Autowired
+    private static String URL="http://114.116.15.147:8383/depData/studentData?startDate=2018-11-01&endDate=2018-11-02&termId=2018-2019-1&depId=%E9%BB%91%E9%BE%99%E6%B1%9F%E5%B7%A5%E7%A8%8B&_=1541148326865";
     private NotifyDao notifyDao;
     @Autowired
     private NotifyRecordDao recordDao;
